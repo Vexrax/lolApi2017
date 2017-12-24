@@ -23,6 +23,7 @@ body
     max-height: 100px;
     align-content: center;
     margin: 0 auto;
+    color: #cccccc;
 }
 .footers
 {
@@ -65,23 +66,47 @@ footer>a:hover
 input[type="text"], .table-container input
 {
     padding-top: .3em;
-    width: 700px;
+    width: 850px;
+    text-indent: 1%;
     padding-bottom: .4em;
     border: solid 3px #af191c; /* fix */
     transition: box-shadow 0.3s, border 0.3s;
+    border-radius: 8px;
 }
 .searchBarSpace
 {
     position: relative;
-    width: 700px;
+    width: 1000px;
     height: 50px;
     margin: 0 auto;
     margin-top: 2.75em;
     margin-bottom: 0.5em;
 }
-#divRegionSelection {
-    background-color: transparent;
+#regionSelection
+{
+    width: 7em;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-indent: 6%;
+    box-shadow: none;
     border-radius: 8px;
+    padding-top: .35em;
+    padding-bottom: .35em;
+    border: solid 3px #af191c;
+    transition: box-shadow 0.3s, border 0.3s;
+    appearance: none;
+}
+.SummonerPrompt
+{
+    font-size: 25px;
+    padding: 5px;
+    position: relative;
+    width: 550px;
+    height: 50px;
+    margin: 0 auto;
+    align-self:  center;
+    color: #cccccc;
 }
 /*
  * A better looking default horizontal rule
