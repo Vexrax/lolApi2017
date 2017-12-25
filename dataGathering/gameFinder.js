@@ -75,7 +75,7 @@ finder.prototype.createSQLArray = function(body) {
     var player;
     for(i in players) {
         player = players[i];
-        arr.push(body.gameId + player.participantId);
+        arr.push(body.gameId + "" + player.participantId);
         arr.push(body.gameId);
         arr.push(player.stats.win == "true" ? 1 : 0);
         arr.push(player.timeline.lane);
