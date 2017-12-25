@@ -7,7 +7,8 @@ function SQL() {
         database: 'leaguedb'
     });
     this.connection.connect(function(err) {
-        throw err;
+        if(err) throw err;
+        console.log("Connected to Database");
     });
 }
 SQL.prototype.insert = function(items) {
@@ -17,6 +18,20 @@ SQL.prototype.insert = function(items) {
     }
     query += items[items.length] + ")";
     
+}
+SQL.prototype.insertNestedArray = function(nestedArray) {
+    //console.log(nestedArray);
+    console.log("Adding record");
+    var text = this.connection.query("INSERT INTO games_ps8 VALUES ?", [nestedArray], function(err) {
+        if (err) {
+            console.log("Error encountered. Likely Record Already Existed");
+            //throw err;
+        }
+        else {
+            console.log("Record added");
+        }
+    });
+    //console.log("sql: " + text.sql);
 }
 
 module.exports = SQL;
