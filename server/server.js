@@ -1,8 +1,15 @@
+var envs = require('dotenv');
+envs.config();
 const express = require('express');
 var path = require('path');
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var analysisEngine = require('./analysisEngine');
+var riotAPI = require('./riotAPI');
+var riot = new riotAPI(process.env.RIOT_KEY);
+var analysis = new analysisEngine(riot);
+
 
 
 app.use(express.static(path.join(__dirname, '/../')));
