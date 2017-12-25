@@ -97,18 +97,45 @@ input[type="text"], .table-container input
     padding-bottom: .35em;
     border: solid 3px #CF2424;
     transition: box-shadow 0.3s, border 0.3s;
-    appearance: none;
 }
 .SummonerPrompt
 {
     font-size: 25px;
     padding: 5px;
-    position: relative;
     width: 550px;
     height: 50px;
     margin: 0 auto;
-    align-self:  center;
+    position: relative;
+    align-self: center;
     color: #cccccc;
+}
+
+.searchButtonSpace
+{
+    width: 1000px;
+    height: 50px;
+    position: relative;
+    margin: 0 38%;
+    margin-top: 2.75em;
+    margin-bottom: 0.5em;
+}
+#searchButton
+{
+    width: 400px;
+    font-size: 19px;
+    color: white;
+    background-color: #A62139;
+    border: 3px outset #CF2424;
+    border-radius: 9px;
+}
+
+#searchButton:active
+{
+    background-color: #CF2424;
+}
+#searchButton:hover {
+    background-color: #CF2424;
+    cursor: pointer;
 }
 /*
  * A better looking default horizontal rule
