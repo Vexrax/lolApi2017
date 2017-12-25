@@ -19,12 +19,13 @@ SQL.prototype.insert = function(items) {
     query += items[items.length] + ")";
     
 }
-SQL.prototype.insertNestedArray = function(nestedArray) {
+SQL.prototype.insertNestedArray = function(nestedArray, name) {
     //console.log(nestedArray);
     console.log("Adding record");
-    var text = this.connection.query("INSERT INTO games_ps8 VALUES ?", [nestedArray], function(err) {
+    var text = this.connection.query("INSERT INTO " + name + " VALUES ?", [nestedArray], function(err) {
         if (err) {
-            console.log("Error encountered. Likely Record Already Existed");
+            console.log("Error encountered");
+            console.log(err);
             //throw err;
         }
         else {

@@ -45,7 +45,7 @@ finder.prototype.addGamesList = function(gamesList, index, callback) {
             }
         }
         var toSQL = self.createSQLArray(gameJSON);
-        self.sql.insertNestedArray(toSQL);
+        self.sql.insertNestedArray(toSQL, "games_ps8");
         index ++;
         if(index < gamesList.length) {
             setTimeout(function() {

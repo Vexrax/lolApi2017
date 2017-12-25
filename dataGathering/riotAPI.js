@@ -85,4 +85,30 @@ riot.prototype.getRankBySummonerID = function(summID, callback) {
     });
 }
 
+riot.prototype.getChampData = function(callback) {
+    uri = "https://na1.api.riotgames.com/lol/static-data/v3/champions?locale=en_US&tags=info&tags=tags&dataById=false&api_key=" + this.key;
+    this.request(uri, function(err, res, body) {
+        console.log(uri);
+        var json = JSON.parse(body);
+        var champions = json.data;
+        var championArr = [];
+        var championsArr = [];
+        //console.log(json);
+        for(var i in json.data) {
+            championArr.push(champions[i].id);
+            championArr.push(champions[i].name);
+            championArr.push(champions[i].tags[0]);
+            championArr.push(champions[i].tags[1]);            
+            championArr.push(champions[i].info.difficulty);
+            championArr.push(champions[i].info.attack);
+            championArr.push(champions[i].info.defense);
+            championArr.push(champions[i].info.magic);
+            championsArr.push(championArr);
+            championArr = [];
+        }
+        //console.log(championsArr);
+        callback(championsArr);
+    });
+}
+
 module.exports = riot;
