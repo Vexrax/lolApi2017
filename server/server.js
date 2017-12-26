@@ -19,12 +19,15 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));  
 });
 
+app.get('/test/fag/', function(req, res){
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));  
+});
 io.on('connection', function(socket) {
     console.log("A user connected");
     socket.on('data', function(data) {
         console.log(data);
         io.emit("data", "ok. Cumming over");
-    })
+    });
 });
 
 

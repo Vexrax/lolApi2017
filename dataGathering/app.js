@@ -1,2 +1,2 @@
 var finder = require('./gameFinder');
-var x = new finder("RGAPI-7e6a4a8c-2f61-4e24-ba5f-5b0c36f3bb1a", 2, "whoisthis");
+var x = new finder("RGAPI-3bb83fe9-6aad-4187-9910-19843f5985d1", 2, "aniviakid");
