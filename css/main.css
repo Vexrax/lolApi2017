@@ -12,6 +12,14 @@ body
 {
     height: 100%;
     background-color:#242b31;
+    vertical-align: middle;
+    margin: 0 auto;
+
+}
+.fixed-top
+{
+    position: fixed;
+    top: 0;
 }
 .banner
 {
@@ -112,26 +120,28 @@ input[type="text"], .table-container input
 {
     font-size: 25px;
     padding: 5px;
-    width: 550px;
+    width: 100%;
     height: 50px;
-    margin: 0 auto;
-    position: relative;
-    align-self: center;
+    margin: -20px auto;
+    text-align: center;
     color: #cccccc;
 }
 
 .searchButtonSpace
 {
-    width: 1000px;
-    height: 50px;
-    position: relative;
-    margin: 0 38%;
+    width: 100%;
+    height: 100px;
     margin-top: 2.75em;
     margin-bottom: 0.5em;
+    text-align: center;
+}
+.searchButton
+{
+    width: 400px;
+    height: 50px;
 }
 #searchButton
 {
-    width: 400px;
     font-size: 19px;
     color: white;
     background-color: #A62139;
