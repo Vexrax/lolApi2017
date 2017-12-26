@@ -35,4 +35,12 @@ SQL.prototype.insertNestedArray = function(nestedArray, name) {
     //console.log("sql: " + text.sql);
 }
 
+SQL.prototype.select = function(table, whereArg, callback) {
+    var sqlText = "SELECT * FROM " + table + " " + whereArg; {
+        this.connection.query(sqlText, function(err, result) {
+            callback(result);
+        });
+    }
+}
+
 module.exports = SQL;

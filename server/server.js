@@ -16,9 +16,7 @@ app.use(express.static(path.join(__dirname, '/../')));
 
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));
-    res.sendFile("C:/Users/Arek Fielding/Documents/Development/lolApi2017/index.html");
-  
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));  
 });
 
 io.on('connection', function(socket) {
