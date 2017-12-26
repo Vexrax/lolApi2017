@@ -15,19 +15,15 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand" rel="stylesheet">
     </head>
-
+    <div class="banner"></div>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-        <div class="banner"></div>
         <div class="title">
-            <p>RIGHT RUNES</p>
+            <p>RUNE REFLECTION</p>
         </div>
 
-        <div class="searchBarSpace">
+        <form class="searchBarSpace" method="get">
             <input id="Summoner Field" type ="text" name = "name" placeholder="Summoner Name">
-            <select id = "regionSelection" name="region">
+            <select id = "regionSelection" name="region" title="region">
                 <option value="na">NA</option>
                 <option value="na">EUW</option>
                 <option value="na">KR</option>
@@ -39,27 +35,16 @@
                 <option value="na">LAS</option>
                 <option value="na">TR</option>
             </select>
-        </div>
+        </form>
         <button class="searchButtonSpace" id="searchButton" type="submit">
             <strong>Search</strong>
         </button>
         <div class="SummonerPrompt">
             <p> Please provide a Summoner Name and Region.</p>
         </div>
-
     </body>
-
-        <!-- Add your site or application content here -->
-
-
-
-
-
-
-        <footer class = fixed-bottom>
+    <footer class = fixed-bottom>
         <div class="footers fixed-bottom-banner"></div>
-        </footer>
-    </body>
-    <script src="/socket.io/socket.io.js"></script>    
+    </footer>
     <script src="webjs/main.js"></script>
 </html>
