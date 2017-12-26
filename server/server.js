@@ -16,7 +16,12 @@ app.use(express.static(path.join(__dirname, '/../')));
 
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));  
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));
+});
+
+app.get('/:region/:userId', function(req, res){
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
+    console.log("data emitted");
 });
 
 io.on('connection', function(socket) {
