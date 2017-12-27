@@ -35,6 +35,10 @@ io.on('connection', function(socket) {
     });
 });
 
+//use this socket to get match history
+io.on('getMatchHistory', function(req, res) {
+    
+});
 
 
 http.listen(3000, function(){
