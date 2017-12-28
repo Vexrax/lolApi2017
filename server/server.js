@@ -46,7 +46,7 @@ io.on('connection', function(socket) {
         console.log("received");
         riot.getRecentGamesByName("earleking", function(list) {
             console.log("ok");
-            io.emit("matchHistory", list);
+            io.emit("matchHistory", list, "hello");
         });
     });
 });
