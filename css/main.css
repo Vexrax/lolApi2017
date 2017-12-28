@@ -96,8 +96,9 @@ input[type="text"], .table-container input
 .searchBarSpace
 {
     position: relative;
-    width: 1000px;
-    height: 50px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
     margin: 0 auto;
     margin-top: 2.75em;
     margin-bottom: 0.5em;
@@ -158,26 +159,78 @@ input[type="text"], .table-container input
     background-color: #CF2424;
     cursor: pointer;
 }
+.searchButtonSpaceSummonerPage
+{
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.searchBarSpaceSummonerPage
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.searchButtonSummonerPage
+{
+    position: relative;
+    width: 25%;
+}
+
+
 /*
 ===============================
 Profile Page
 ===============================
  */
+.nameplate
+{
+    Width: 100%;
+    height: 110px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    margin-top: auto;
+}
+.name
+{
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    text-align: left;
+    color: #cccccc;
+    font-size: 100px;
+
+}
+.nameplate>.rank
+{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    color: #cccccc;
+    font-size: 25px;
+}
 .content
 {
-    width: 690px;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
     position: relative;
+    text-align: center;
 }
 .content>.matchContent
 {
     display: inline-block;
-    width: 690px;
+    width: 50%;
     height: 150px;
     vertical-align: 12px;
-    margin: 10px auto;
-    align-content: center;
-    background-color: #30cc98;
-    border-radius: 9px;
+    margin: 5px auto;
+    background-color: #ffeff1;
+    border-bottom-right-radius: 11px;
+    border-top-right-radius: 11px;
 }
 .content>.matchContent>.Champ
 {
