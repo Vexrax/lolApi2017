@@ -18,10 +18,10 @@
     <div class="banner"></div>
     <body>
         <div class="title">
-            <p>RUNE REFLECTION</p>
+            <p>RUNIC INSIGHT</p>
         </div>
 
-        <form class="searchBarSpace" method="get">
+        <form class="searchBarSpace" method="post" action="/">
             <input id="Summoner Field" type ="text" name = "name" placeholder="Summoner Name">
             <select id = "regionSelection" name="region" title="region">
                 <option value="NA">NA</option>
@@ -49,7 +49,7 @@
     <footer class = fixed-bottom>
         <div class="footers fixed-bottom-banner"></div>
     </footer>
-    <script src="/socket.io/socket.io.js"></script>    
+    <script src="/socket.io/socket.io.js"></script>
     <script src="webjs/main.js"></script>
     <script src="server/server.js"></script>
 </html>
