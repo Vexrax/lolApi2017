@@ -18,6 +18,12 @@ app.use(express.static(path.join(__dirname, '/../')));
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));
 });
+
+app.get('/test', function(req, res){
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));
+    
+});
+
 app.get('/:region', function(req, res){
     res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));
     console.log("Serving 404");
@@ -29,21 +35,24 @@ app.get('/:region/:userId?', function(req, res){
 });
 
 
-app.get('/test/fag/', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));
-});
 io.on('connection', function(socket) {
     console.log("A user connected");
     socket.on('data', function(data) {
         console.log(data);
         io.emit("data", "ok. Cumming over");
     });
+    //use this socket to get match history    
+    socket.on('getMatchHistory', function(data) {
+        console.log("received");
+        riot.getRecentGamesByName("earleking", function(list) {
+            console.log("ok");
+            io.emit("matchHistory", list);
+        });
+    });
 });
 
-//use this socket to get match history
-io.on('getMatchHistory', function(req, res) {
-    
-});
+
+
 
 
 http.listen(3000, function(){

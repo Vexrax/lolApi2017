@@ -84,4 +84,34 @@ riot.prototype.getRankBySummonerID = function(summID, callback) {
     });
 }
 
+//returns a json list of games. of all games
+riot.prototype.getRecentGamesByName = function(name, callback) {
+    var self = this;
+    //changes supplied summ name to account it
+    this.nameToAccountID(name, function(id) {
+        //account id to games list. This just contains a list of the games ids.
+        var gameListUri = self.host + "/lol/match/v3/matchlists/by-account/" + id + "/recent" + self.keyString;
+        console.log(gameListUri);
+        self.request(gameListUri, function(err, res, data) {
+            //soo.... now I have a list of games, now i have to compile an array of json of the actual games
+            //gl future me
+            //console.log(data);
+            var gameList = JSON.parse(data);
+            var dataList = [];
+            self.recentGameLoop(dataList, gameList, 0, function(list) {
+                callback(list);
+            });
+        });
+    });
+}
+
+riot.prototype.recentGameLoop = function(dataList, gameList, index, callback) {
+    var self = this;
+    this.getGame(gameList.matches[index].gameId, function(body) {
+        dataList.push(body);
+        if(index < 9) self.recentGameLoop(dataList, gameList, index + 1, callback);
+        else callback(dataList);
+    });
+}
+
 module.exports = riot;
