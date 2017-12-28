@@ -45,17 +45,19 @@ io.on('connection', function(socket) {
     console.log("A user connected");
     socket.on('data', function(data) {
         console.log(data);
-        io.emit("data", "ok. Cumming over");
+        io.emit("data", "ok");
     });
     //use this socket to get match history
     socket.on('getMatchHistory', function(data) {
         console.log("received");
-        riot.getRecentGamesByName("earleking", function(list) {
+        riot.getRecentGamesByName("earleking", function(list, accId) {
             console.log("ok");
+            var runesList;
             io.emit("matchHistory", list, "hello");
         });
     });
 });
+
 
 
 
@@ -66,3 +68,10 @@ http.listen(3000, function(){
 });
 
 
+//functions
+function getRunesForGames(gameList, accId) {
+    var gameRuneList = [], allGamesRuneList = [];
+    for(var i in gameList) {
+        var curGame = gameList[i];
+    }
+} 

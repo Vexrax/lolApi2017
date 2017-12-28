@@ -99,7 +99,7 @@ riot.prototype.getRecentGamesByName = function(name, callback) {
             var gameList = JSON.parse(data);
             var dataList = [];
             self.recentGameLoop(dataList, gameList, 0, function(list) {
-                callback(list);
+                callback(list, id);
             });
         });
     });
