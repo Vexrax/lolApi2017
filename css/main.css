@@ -16,6 +16,7 @@ body
     margin: 0 auto;
 
 }
+
 .fixed-top
 {
     position: fixed;
@@ -30,6 +31,7 @@ body
     border-bottom-left-radius: 9px;
     padding-top: 2px;
     padding-bottom: 2px;
+    text-align: right;
 }
 .title
 {
@@ -91,7 +93,7 @@ input[type="text"], .table-container input
     padding-bottom: .4em;
     border: solid 3px #CF2424; /* fix */
     transition: box-shadow 0.3s, border 0.3s;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 .searchBarSpace
 {
@@ -111,9 +113,9 @@ input[type="text"], .table-container input
     font-size: 17px;
     text-indent: 6%;
     box-shadow: none;
-    border-radius: 8px;
-    padding-top: .35em;
-    padding-bottom: .35em;
+    border-radius: 4px;
+    padding-top: .30em;
+    padding-bottom: .30em;
     border: solid 3px #CF2424;
     transition: box-shadow 0.3s, border 0.3s;
 }
@@ -147,7 +149,7 @@ input[type="text"], .table-container input
     color: white;
     background-color: #A62139;
     border: 3px outset #CF2424;
-    border-radius: 9px;
+    border-radius: 4px;
 }
 
 #searchButton:active
@@ -177,10 +179,45 @@ input[type="text"], .table-container input
 .searchButtonSummonerPage
 {
     position: relative;
-    width: 25%;
+    width: 100px;
+    height: 60%;
+    margin-right: 20px;
 }
 
+#regionSelection2
+{
+    width: 70px;
+    outline: none;
+    font-size: 17px;
+    text-indent: 6%;
+    box-shadow: none;
+    border-radius: 4px;
+    padding-top: .20em;
+    padding-bottom: .34em;
+    border: solid 3px #CF2424;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+#searchButton2
+{
+    height: 45%;
+    margin-top:4px;
+    font-size: 19px;
+    color: white;
+    background-color: #000000;
+    border: 3px outset #000000;
+    padding-bottom: 27px;
+    outline: none;
+}
 
+#searchButton2:active
+{
+    background-color: #010700;
+}
+#searchButton2:hover
+{
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
 /*
 ===============================
 Profile Page
@@ -235,23 +272,63 @@ Profile Page
 }
 .content>.matchContent>.Champ
 {
+    text-align: center;
+    display: inline-block;
     width: 100px;
     height: 150px;
+    color: #87DDC6;
+
+
+}
+.content>.matchContent>.Champ>.picture
+{
+    width: 100px;
+    height: 150px;
+    margin-top: 30px ;
+    position: absolute;
 
 }
 .content>.matchContent>.KDA
 {
-    width: 100px;
+    display: inline-block;
+    width: 200px;
     height: 150px;
-    position: relative;
-
+    text-align: center;
+}
+.content>.matchContent>.KDA>.kda
+{
+    width: 200px;
+    height: 150px;
+    margin-top: 45px ;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+}
+.content>.matchContent>.items
+{
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+}
+.content>.matchContent>.items>.itemsquares
+{
+    text-align: center;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+.content>.matchContent>.players
+{
+    display: inline-block;
+    width: 300px;
+    height: 150px;
 }
 .deadspacebottom
 {
     width: 100%;
     height: 20px;
     position: relative;
-    margin: 20px auto;
 
 }
 /*

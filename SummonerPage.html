@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand" rel="stylesheet">
 </head>
-<div class="banner"></div>
+
 <body>
-    <form class="searchBarSpaceSummonerPage" method="post" action = '/'>
-        <input id="Summoner Field" type ="text" name = "name" placeholder="Summoner Name">
-        <select id = "regionSelection" name="region" title="region">
+    <form class="banner" method="post" action = '/'>
+        <input class="table-containerSummoner" id="Summoner Field" type ="text" name = "name" placeholder="Summoner Name" width="425">
+        <select id = "regionSelection2" name="region" title="region">
             <option value="na">NA</option>
             <option value="EUW">EUW</option>
             <option value="KR">KR</option>
@@ -31,27 +31,66 @@
             <option value="LAS">LAS</option>
             <option value="TR">TR</option>
         </select>
-        <div class="searchButtonSpaceSummonerPage">
-            <button class ="searchButtonSummonerPage" id="searchButton" type="submit">
-                <strong>Search</strong>
-            </button>
-        </div>
+        <button class ="searchButtonSummonerPage" id="searchButton2" type="submit">
+            <strong>Search</strong>
+        </button>
     </form>
 
 
     <div class="nameplate">
        <div class="name" id ="nameplate">
-           Vexrax | Platinum III
        </div>
     </div>
     <div class="content">
-        <div class = "matchContent"></div>
-        <div class = "matchContent"></div>
-        <div class = "matchContent"></div>
-        <div class = "matchContent"></div>
-        <div class = "matchContent"></div>
-        <div class = "matchContent"></div>
-        <div class = "matchContent"></div>
+        <div class = "matchContent" id ="matchcontent1">
+            <div class = "Champ" id="champcontent1">
+                  <div class="picture">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Jinx.png" width="75" height="75" align="middle">
+                  </div>
+            </div>
+            <div class = "KDA" id = KDAcontent1>
+                <div class="kda"> 1/2/1 </div>
+            </div>
+            <div class = "items" id="itemscontent1">
+                <div class ="itemsquares"></div>
+                <div class ="itemsquares"></div>
+                <div class ="itemsquares"></div>
+                <div class ="itemsquares"></div>
+                <div class ="itemsquares"></div>
+                <div class ="itemsquares"></div>
+            </div>
+            <div class = "players" id = "playerscontent1"></div>
+        </div>
+        <div class = "matchContent" id ="matchcontent2">
+            <div class = "Champ" id="champcontent2"></div>
+            <div class = "KDA" id = KDAcontent2></div>
+            <div class = "items" id="itemscontent2"></div>
+            <div class = "players" id = "playerscontent2"></div>
+        </div>
+        <div class = "matchContent" id ="matchcontent3">
+            <div class = "Champ" id="champcontent3"></div>
+            <div class = "KDA" id = KDAcontent3></div>
+            <div class = "items" id="itemscontent3"></div>
+            <div class = "players" id = "playerscontent3"></div>
+        </div>
+        <div class = "matchContent" id ="matchcontent4">
+            <div class = "Champ" id="champcontent4"></div>
+            <div class = "KDA" id = KDAcontent4></div>
+            <div class = "items" id="itemscontent4"></div>
+            <div class = "players" id = "playerscontent4"></div>
+        </div>
+        <div class = "matchContent" id ="matchcontent5">
+            <div class = "Champ" id="champcontent5"></div>
+            <div class = "KDA" id = KDAcontent5></div>
+            <div class = "items" id="itemscontent5"></div>
+            <div class = "players" id = "playerscontent5"></div>
+        </div>
+        <div class = "matchContent" id ="matchcontent6">
+            <div class = "Champ" id="champcontent6"></div>
+            <div class = "KDA" id = KDAcontent6></div>
+            <div class = "items" id="itemscontent6"></div>
+            <div class = "players" id = "playerscontent6"></div>
+        </div>
     </div>
     <div class="deadspacebottom"></div>
 </body>
