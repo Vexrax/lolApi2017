@@ -76,18 +76,20 @@ function getMatchHistory(name, socketId) {
     riot.getRecentGamesByName(name, function(list, account) {
         var runesList = getRunesForGames(list, account.accountId);
         var reccList;
-        io.to(socketId).emit("matchHistory", account, list, runesList, reccList);
+        //runesList[1] is the list of participant ids
+        io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList);
    });
 }
 
 function getRunesForGames(gameList, accId) {
-    var gameRuneList = [], allGamesRuneList = [];
+    var gameRuneList = [], allGamesRuneList = [], idList = [], returnList = [];
     var playerId = 0;
     for(var i in gameList) {
         var curGame = gameList[i];
         for(var t in curGame.participantIdentities) {
             if(curGame.participantIdentities[t].player.accountId == accId) {
                 playerId = curGame.participantIdentities[t].participantId;
+                idList.push(playerId);
             }
         }
         //error check
@@ -104,5 +106,8 @@ function getRunesForGames(gameList, accId) {
         allGamesRuneList.push(gameRuneList);
         gameRuneList = [];
     }
-    return allGamesRuneList;
+    returnList.push(allGamesRuneList);
+    returnList.push(idList);
+    return returnList;
 }
+

@@ -3,9 +3,10 @@ var socket = io();
 //socket.emit("getMatchHistory", "");
 //var document = require('html-element').document;
 socket.emit("getMatchHistory");
-socket.on("matchHistory", function(summonerData, gamesList, currentRunesList, advisedRunesList) {
+socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunesList, advisedRunesList) {
     console.log(summonerData);
     console.log(gamesList);
+    console.log(idList);
     console.log(currentRunesList);
     document.getElementById("nameplate").innerHTML = summonerData.name;
     
