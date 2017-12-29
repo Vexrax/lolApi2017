@@ -21,7 +21,8 @@ app.get('/', function(req, res){
 
 app.get('/:region/:name?', function(req, res){
     res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
-    console.log("data emitted");
+    //console.log(req.body.name);    
+    //getMatchHistory()
 });
 
 app.get('/test', function(req, res){
@@ -37,6 +38,7 @@ app.get('/:region', function(req, res){
 app.post('/', urlencodedParser, function (req, res) {
     console.log(req.body);
     res.redirect('http://localhost:3000/' + req.body.region + '/' + req.body.name);
+    getMatchHistory(req.body.name);    
     res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 });
 
@@ -49,12 +51,7 @@ io.on('connection', function(socket) {
     });
     //use this socket to get match history
     socket.on('getMatchHistory', function(data) {
-        console.log("received");
-        riot.getRecentGamesByName("earleking", function(list, accId) {
-            console.log("ok");
-            var runesList;
-            io.emit("matchHistory", list, "hello");
-        });
+        
     });
 });
 
@@ -64,14 +61,44 @@ io.on('connection', function(socket) {
 
 
 http.listen(3000, function(){
-  console.log('listening on *:3000');
+  console.log('listening on localHost:3000');
 });
 
 
 //functions
+function getMatchHistory(name) {
+    console.log("gettingHistory");
+    riot.getRecentGamesByName(name, function(list, account) {
+        console.log("ok");
+        var runesList = getRunesForGames(list, account.accountId);
+        var reccList;
+        io.emit("matchHistory", account, list, runesList, reccList);
+    });
+}
+
 function getRunesForGames(gameList, accId) {
     var gameRuneList = [], allGamesRuneList = [];
+    var playerId = 0;
     for(var i in gameList) {
         var curGame = gameList[i];
+        for(var t in curGame.participantIdentities) {
+            if(curGame.participantIdentities[t].player.accountId == accId) {
+                playerId = curGame.participantIdentities[t].participantId;
+            }
+        }
+        //error check
+        if(playerId == 0) {
+            console.log("ERROR! runesForGames");
+        }
+        var stats = curGame.participants[playerId - 1].stats;
+        gameRuneList.push(stats.perk0);
+        gameRuneList.push(stats.perk1);
+        gameRuneList.push(stats.perk2);
+        gameRuneList.push(stats.perk3);
+        gameRuneList.push(stats.perk4);
+        gameRuneList.push(stats.perk5);
+        allGamesRuneList.push(gameRuneList);
+        gameRuneList = [];
     }
+    return allGamesRuneList;
 } 
