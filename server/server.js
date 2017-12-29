@@ -37,13 +37,13 @@ app.get('/:region', function(req, res){
 
 app.post('/', urlencodedParser, function (req, res) {
     //console.log(req.body);
-    getMatchHistory(req.body.name);
     res.redirect('http://localhost:3000/' + req.body.region + '/' + req.body.name);
     //res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 });
 
 
 io.on('connection', function(socket) {
+    //console.log(socket);
     console.log("A user connected");
     socket.on('data', function(data) {
         console.log("hi" + data);
@@ -51,11 +51,11 @@ io.on('connection', function(socket) {
     });
     var name = socket.handshake.headers.referer.split("/");
     name = name[name.length - 1];
-    io.emit('modifyHTML', name);        
-    
+    //io.emit('modifyHTML', name);        
+    io.to(socket.id).emit('modifyHTML', name);
     //use this socket to get match history
-    socket.on('getMatchHistory', function(data) {
-
+    socket.on('getMatchHistory', function() {
+        getMatchHistory(name, socket.id);
     });
 });
 
@@ -65,18 +65,18 @@ io.on('connection', function(socket) {
 
 
 http.listen(3000, function(){
-  console.log('listening on localHost:3000');
+    console.log('listening on localHost:3000');
 });
 
 
 //functions
-function getMatchHistory(name) {
+function getMatchHistory(name, socketId) {
     console.log("gettingHistory");
     
     riot.getRecentGamesByName(name, function(list, account) {
         var runesList = getRunesForGames(list, account.accountId);
         var reccList;
-        io.emit("matchHistory", account, list, runesList, reccList);
+        io.to(socketId).emit("matchHistory", account, list, runesList, reccList);
    });
 }
 
