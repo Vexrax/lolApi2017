@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,19 +17,19 @@
 </head>
 <div class="banner"></div>
 <body>
-    <form class="searchBarSpaceSummonerPage" method="get">
+    <form class="searchBarSpaceSummonerPage" method="post" action = '/'>
         <input id="Summoner Field" type ="text" name = "name" placeholder="Summoner Name">
         <select id = "regionSelection" name="region" title="region">
             <option value="na">NA</option>
-            <option value="na">EUW</option>
-            <option value="na">KR</option>
-            <option value="na">EUNE</option>
-            <option value="na">BR</option>
-            <option value="na">JP</option>
-            <option value="na">OCE</option>
-            <option value="na">LAN</option>
-            <option value="na">LAS</option>
-            <option value="na">TR</option>
+            <option value="EUW">EUW</option>
+            <option value="KR">KR</option>
+            <option value="EUNE">EUNE</option>
+            <option value="BR">BR</option>
+            <option value="JP">JP</option>
+            <option value="OCE">OCE</option>
+            <option value="LAN">LAN</option>
+            <option value="LAS">LAS</option>
+            <option value="TR">TR</option>
         </select>
         <div class="searchButtonSpaceSummonerPage">
             <button class ="searchButtonSummonerPage" id="searchButton" type="submit">
@@ -40,7 +40,7 @@
 
 
     <div class="nameplate">
-       <div class="name">
+       <div class="name" id ="nameplate">
            Vexrax | Platinum III
        </div>
     </div>
@@ -52,8 +52,8 @@
         <div class = "matchContent"></div>
         <div class = "matchContent"></div>
         <div class = "matchContent"></div>
-
     </div>
+    <div class="deadspacebottom"></div>
 </body>
 <footer class = fixed-bottom>
     <div class="footers fixed-bottom-banner"></div>
