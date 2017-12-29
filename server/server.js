@@ -7,7 +7,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var analysisEngine = require('./analysisEngine');
 var riotAPI = require('./riotAPI');
-var riot = new riotAPI(process.env.RIOT_KEY);
+var riot = 'RGAPI-fbc73695-a956-4e07-b64c-bc2850f0ae03';
 var analysis = new analysisEngine(riot);
 var bodyParser = require('body-parser');
 
@@ -21,7 +21,7 @@ app.get('/', function(req, res){
 
 app.get('/:region/:name?', function(req, res){
     res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
-    //console.log(req.body.name);    
+    //console.log(req.body.name);
     //getMatchHistory()
 });
 
@@ -37,8 +37,9 @@ app.get('/:region', function(req, res){
 
 app.post('/', urlencodedParser, function (req, res) {
     console.log(req.body);
+    getMatchHistory(req.body.name);
+    io.emit('modifyHTML', req.body.name);
     res.redirect('http://localhost:3000/' + req.body.region + '/' + req.body.name);
-    getMatchHistory(req.body.name);    
     res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 });
 
@@ -51,7 +52,7 @@ io.on('connection', function(socket) {
     });
     //use this socket to get match history
     socket.on('getMatchHistory', function(data) {
-        
+
     });
 });
 
@@ -101,4 +102,4 @@ function getRunesForGames(gameList, accId) {
         gameRuneList = [];
     }
     return allGamesRuneList;
-} 
+}
