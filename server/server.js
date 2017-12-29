@@ -20,7 +20,10 @@ app.get('/', function(req, res){
 });
 
 app.get('/:region/:name?', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"), function(err) {
+        io.emit("modifyHTML", "shitfuck");  
+    });
+    
     //console.log(req.body.name);    
     //getMatchHistory()
 });
@@ -39,7 +42,10 @@ app.post('/', urlencodedParser, function (req, res) {
     console.log(req.body);
     res.redirect('http://localhost:3000/' + req.body.region + '/' + req.body.name);
     getMatchHistory(req.body.name);    
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
+    var x = req.body.name;
+    //res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"), function(err) {
+    //    io.emit("modifyHTML", x);  
+    //});
 });
 
 
@@ -68,6 +74,7 @@ http.listen(3000, function(){
 //functions
 function getMatchHistory(name) {
     console.log("gettingHistory");
+   
     riot.getRecentGamesByName(name, function(list, account) {
         console.log("ok");
         var runesList = getRunesForGames(list, account.accountId);
