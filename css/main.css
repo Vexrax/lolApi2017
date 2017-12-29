@@ -265,9 +265,11 @@ Profile Page
     height: 150px;
     vertical-align: 12px;
     margin: 5px auto;
-    background-color: #ffeff1;
+    //background-color: #ffeff1;
     border-bottom-right-radius: 11px;
     border-top-right-radius: 11px;
+    background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg");
+    background-position: 100% 10%;
 
 }
 .content>.matchContent>.Champ
@@ -276,7 +278,7 @@ Profile Page
     display: inline-block;
     width: 100px;
     height: 150px;
-    color: #87DDC6;
+ /*   background-color: #ffdfd3; */
 
 
 }
@@ -294,35 +296,83 @@ Profile Page
     width: 200px;
     height: 150px;
     text-align: center;
+    vertical-align: top;
+
 }
 .content>.matchContent>.KDA>.kda
 {
-    width: 200px;
-    height: 150px;
+    height: 40px;
     margin-top: 45px ;
-    position: absolute;
     font-size: 30px;
     font-weight: 900;
     font-style: normal;
+    text-align: center;
+    /*background-color: #ffdfd3;*/
+    border-radius: 9px;
 }
 .content>.matchContent>.items
 {
     display: inline-block;
-    width: 250px;
+    width: 260px;
     height: 150px;
+    vertical-align: top;
+   /*background-color: #ffdfd3;*/
 }
 .content>.matchContent>.items>.itemsquares
 {
+    margin-top: 8.5px;
     text-align: center;
     display: inline-block;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
+
+}
+.content>.matchContent>.items>.trinketcircle
+{
+    margin-top: 7.5px;
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
 }
 .content>.matchContent>.players
 {
     display: inline-block;
-    width: 300px;
+    width: 290px;
     height: 150px;
+    vertical-align: top;
+}
+.content>.matchContent>.players>.red
+{
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    background: #cea7a7;
+}
+.content>.matchContent>.players>.red>.players
+{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: none;
+    text-align: left;
+}
+.content>.matchContent>.players>.blue
+{
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    background: #a3cfec;
+
+}
+.content>.matchContent>.players>.blue>.players
+{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: none;
+    text-align: left;
 }
 .deadspacebottom
 {
