@@ -72,12 +72,12 @@ http.listen(3000, function(){
 //functions
 function getMatchHistory(name) {
     console.log("gettingHistory");
-   
+    
     riot.getRecentGamesByName(name, function(list, account) {
         var runesList = getRunesForGames(list, account.accountId);
         var reccList;
         io.emit("matchHistory", account, list, runesList, reccList);
-    });
+   });
 }
 
 function getRunesForGames(gameList, accId) {
