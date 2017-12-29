@@ -7,7 +7,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var analysisEngine = require('./analysisEngine');
 var riotAPI = require('./riotAPI');
-var riot = new riotAPI(process.env.RIOT_KEY);
+var riot = new riotAPI('RGAPI-fbc73695-a956-4e07-b64c-bc2850f0ae03');
 var analysis = new analysisEngine(riot);
 var bodyParser = require('body-parser');
 
@@ -20,12 +20,9 @@ app.get('/', function(req, res){
 });
 
 app.get('/:region/:name?', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"), function(err) {
-        io.emit("modifyHTML", "shitfuck");  
-    });
-    
-    //console.log(req.body.name);    
-    //getMatchHistory()
+    console.log("testing");
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
+
 });
 
 app.get('/test', function(req, res){
@@ -39,25 +36,26 @@ app.get('/:region', function(req, res){
 });
 
 app.post('/', urlencodedParser, function (req, res) {
-    console.log(req.body);
+    //console.log(req.body);
+    getMatchHistory(req.body.name);
     res.redirect('http://localhost:3000/' + req.body.region + '/' + req.body.name);
-    getMatchHistory(req.body.name);    
-    var x = req.body.name;
-    //res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"), function(err) {
-    //    io.emit("modifyHTML", x);  
-    //});
+    //res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 });
 
 
 io.on('connection', function(socket) {
     console.log("A user connected");
     socket.on('data', function(data) {
-        console.log(data);
-        io.emit("data", "ok");
+        console.log("hi" + data);
+        //io.emit("data", "ok");
     });
+    var name = socket.handshake.headers.referer.split("/");
+    name = name[name.length - 1];
+    io.emit('modifyHTML', name);        
+    
     //use this socket to get match history
     socket.on('getMatchHistory', function(data) {
-        
+
     });
 });
 
@@ -76,7 +74,6 @@ function getMatchHistory(name) {
     console.log("gettingHistory");
    
     riot.getRecentGamesByName(name, function(list, account) {
-        console.log("ok");
         var runesList = getRunesForGames(list, account.accountId);
         var reccList;
         io.emit("matchHistory", account, list, runesList, reccList);
@@ -108,4 +105,4 @@ function getRunesForGames(gameList, accId) {
         gameRuneList = [];
     }
     return allGamesRuneList;
-} 
+}
