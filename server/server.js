@@ -8,6 +8,8 @@ var io = require('socket.io')(http);
 var analysisEngine = require('./analysisEngine');
 var riotAPI = require('./riotAPI');
 var riot = new riotAPI('RGAPI-fbc73695-a956-4e07-b64c-bc2850f0ae03');
+var mySQL = require('./mySQL');
+var sql = new mySQL();
 var analysis = new analysisEngine(riot);
 var bodyParser = require('body-parser');
 
@@ -36,11 +38,8 @@ app.get('/:region', function(req, res){
 });
 
 app.post('/', urlencodedParser, function (req, res) {
-    //console.log(req.body);
     riot.nameToProfile(req.body.name, function(profile) {
         if(profile.name) {
-            console.log("Name found: " + profile.name);
-            console.log(profile);
             res.redirect('http://localhost:3000/' + req.body.region + '/' + profile.name);            
         }
         else {
@@ -53,7 +52,6 @@ app.post('/', urlencodedParser, function (req, res) {
 
 
 io.on('connection', function(socket) {
-    //console.log(socket);
     console.log("A user connected");
     socket.on('data', function(data) {
         console.log("hi" + data);
@@ -88,8 +86,10 @@ function getMatchHistory(name, socketId) {
         else {
             var runesList = getRunesForGames(list, account.accountId);
             var reccList;
+            idListToNameList(runesList[2], function(champNameList) {
+                io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList, champNameList);                
+            });
             //runesList[1] is the list of participant ids
-            io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList);
         }
 
    });
@@ -124,10 +124,24 @@ function getRunesForGames(gameList, accId) {
     returnList.push(allGamesRuneList);
     returnList.push(idList);
     returnList.push(champList);
+    console.log(champList);
     return returnList;
 }
 
-function idListToNameList(idList) {
-    var sql = require('./mySQL')
-    
+function idListToNameList(idList, callback) {
+    //console.log(idList);
+    var champList = [];
+    sql.select("champions", "", function(data) {
+        for(var i in idList) {
+            for(var t in data) {
+                //console.log(data[t].id);
+                if(idList[i] == data[t].id) {
+                    //console.log(data[t].name);                    
+                    champList.push(data[t].name.replace(/\s/g, ''));
+                }
+            }
+        }
+        console.log(champList);
+        callback(champList);
+    });
 }

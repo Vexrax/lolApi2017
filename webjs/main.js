@@ -8,6 +8,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     console.log(gamesList);
     console.log(idList);
     console.log(currentRunesList);
+    console.log(champList);
     document.getElementById("nameplate").innerHTML = summonerData.name;
     
 });
