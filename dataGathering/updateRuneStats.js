@@ -33,11 +33,12 @@ function champLoop(runeList, champList, index) {
         rune.push(runeList[i].id + "" + champList[index].id);
         rune.push(runeList[i].id);
         rune.push(champList[index].id);
-        rune.push(0);//win %
+        rune.push(0);//wins
         rune.push(0);//games
         rune.push(0);//var1
         rune.push(0);//var2
-        rune.push(0);//var3   
+        rune.push(0);//var3
+        rune.push(0);//win rate   
         runeArray.push(rune);
         rune = [];
     }
@@ -95,6 +96,7 @@ function champLoop(runeList, champList, index) {
             runeArray[runeIndex][5] /= runeArray[runeIndex][4];
             runeArray[runeIndex][6] /= runeArray[runeIndex][4];
             runeArray[runeIndex][7] /= runeArray[runeIndex][4];
+            runeArray[runeIndex][8] = runeArray[runeIndex][3] / runeArray[runeIndex][4];
         }
         sql.insertNestedArray(runeArray, "rune_stats");
         if(index < champList.length - 1) champLoop(runeList, champList, index + 1);

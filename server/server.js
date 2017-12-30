@@ -12,6 +12,7 @@ var riot = new riotAPI('RGAPI-fbc73695-a956-4e07-b64c-bc2850f0ae03');
 var mySQL = require('./mySQL');
 var sql = new mySQL();
 var analysis = new analysisEngine(riot);
+//analysis.setUp();//set it up bois
 var bodyParser = require('body-parser');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -88,7 +89,8 @@ function getMatchHistory(name, socketId) {
             var runesList = getRunesForGames(list, account.accountId);
             var reccList;
             idListToNameList(runesList[2], function(champNameList) {
-                io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList, champNameList);                
+                io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList, champNameList);
+                                
             });
             //runesList[1] is the list of participant ids
         }
