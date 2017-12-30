@@ -276,7 +276,7 @@ Profile Page
 {
     text-align: center;
     display: inline-block;
-    width: 100px;
+    width: 11.5%;
     height: 150px;
  /*   background-color: #ffdfd3; */
 
@@ -293,7 +293,7 @@ Profile Page
 .content>.matchContent>.KDA
 {
     display: inline-block;
-    width: 200px;
+    width: 23.1%;
     height: 150px;
     text-align: center;
     vertical-align: top;
@@ -313,7 +313,7 @@ Profile Page
 .content>.matchContent>.items
 {
     display: inline-block;
-    width: 260px;
+    width: 30%;
     height: 150px;
     vertical-align: top;
    /*background-color: #ffdfd3;*/
@@ -339,7 +339,7 @@ Profile Page
 .content>.matchContent>.players
 {
     display: inline-block;
-    width: 290px;
+    width: 33.5%;
     height: 150px;
     vertical-align: top;
 }
