@@ -4,6 +4,14 @@ var socket = io();
 //var document = require('html-element').document;
 socket.emit("getMatchHistory");
 socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunesList, advisedRunesList, champList) {
+    document.getElementById("playerscontent0").style.visibility = 'visible';
+    document.getElementById("playerscontent1").style.visibility = 'visible';
+    document.getElementById("playerscontent2").style.visibility = 'visible';
+    document.getElementById("playerscontent3").style.visibility = 'visible';
+    document.getElementById("playerscontent4").style.visibility = 'visible';
+    document.getElementById("playerscontent5").style.visibility = 'visible';
+    document.getElementById("playerscontent6").style.visibility = 'visible';
+    document.getElementById("playerscontent7").style.visibility = 'visible';
     console.log(summonerData);
     console.log(gamesList);
     console.log(idList);
@@ -141,20 +149,29 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     //now change the player names
     for(var i in gamesList) {
         for(var player in gamesList[i].participants) {
-            var changeId 
+            var changeId
             if(player < 5)
                 changeId= "playerscontent" + i + "-1-" + ((player % 5) + 1);
-            else 
-                changeId= "playerscontent" + i + "-2-" + ((player % 5) + 1);            
+            else
+                changeId= "playerscontent" + i + "-2-" + ((player % 5) + 1);
             //console.log(changeId);
             document.getElementById(changeId).innerHTML = gamesList[i].participantIdentities[player].player.summonerName;
         }
     }
+
 });
 
 socket.on("modifyHTML", function(data){
     console.log("changing HTML");
     document.getElementById("nameplate").innerHTML = data;
+    document.getElementById("playerscontent0").style.visibility = 'hidden';
+    document.getElementById("playerscontent1").style.visibility = 'hidden';
+    document.getElementById("playerscontent2").style.visibility = 'hidden';
+    document.getElementById("playerscontent3").style.visibility = 'hidden';
+    document.getElementById("playerscontent4").style.visibility = 'hidden';
+    document.getElementById("playerscontent5").style.visibility = 'hidden';
+    document.getElementById("playerscontent6").style.visibility = 'hidden';
+    document.getElementById("playerscontent7").style.visibility = 'hidden';
 
 });
 

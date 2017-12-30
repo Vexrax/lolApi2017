@@ -268,7 +268,7 @@ Profile Page
     margin: 5px auto;
     /*background-color: #ffeff1;*/
     border-radius: 4px;
-    background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg");
+    background-image: url("/Icons/Empty.png");
     background-position: 100% 10%;
 
 }
