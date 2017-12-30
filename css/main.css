@@ -262,40 +262,42 @@ Profile Page
 {
     display: inline-block;
     width: 50%;
-    min-width: 800px;
-    height: 150px;
+    min-width: 1000px;
+    height: 100px;
     vertical-align: 12px;
     margin: 5px auto;
     /*background-color: #ffeff1;*/
-    border-bottom-right-radius: 11px;
-    border-top-right-radius: 11px;
+    border-radius: 4px;
     background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg");
     background-position: 100% 10%;
 
 }
 .content>.matchContent>.Champ
 {
-    text-align: center;
     display: inline-block;
     width: 11.5%;
-    height: 150px;
+    height: 100%;
  /*   background-color: #ffdfd3; */
 
 
 }
-.content>.matchContent>.Champ>.picture
-{
+.content>.matchContent>.Champ>.picture {
+    display: block;
     width: 100px;
-    height: 150px;
-    margin-top: 30px ;
-    position: absolute;
-
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.content>.matchContent>.Champ>.SS
+{
+    width: 50px;
+    height: 100px;
 }
 .content>.matchContent>.KDA
 {
     display: inline-block;
     width: 23.1%;
-    height: 150px;
+    height: 100px;
     text-align: center;
     vertical-align: top;
 
@@ -303,11 +305,13 @@ Profile Page
 .content>.matchContent>.KDA>.kda
 {
     height: 40px;
-    margin-top: 45px ;
-    font-size: 30px;
+    margin-top: 25px ;
+    font-size: 35px;
     font-weight: 900;
     font-style: normal;
     text-align: center;
+    font-family: 'economica','sans-serif';
+    color: #000000;
     /*background-color: #ffdfd3;*/
     border-radius: 9px;
 }
@@ -315,17 +319,23 @@ Profile Page
 {
     display: inline-block;
     width: 30%;
-    height: 150px;
+    height: 100px;
     vertical-align: top;
    /*background-color: #ffdfd3;*/
 }
-.content>.matchContent>.items>.itemsquares
+.content>.matchContent>.items>.itemSpace
 {
-    margin-top: 8.5px;
-    text-align: center;
+    margin-top: 10px;
     display: inline-block;
-    width: 22%;
-    height: 60px;
+    width: 150px;
+    height: 80px;
+    margin-bottom: 50px;
+}
+.content>.matchContent>.items>.itemSpace>.itemsquares
+{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
 
 }
 .content>.matchContent>.items>.trinketcircle
@@ -341,44 +351,69 @@ Profile Page
 {
     display: inline-block;
     width: 33.5%;
-    height: 150px;
+    height: 100px;
     vertical-align: top;
 }
 .content>.matchContent>.players>.red
 {
+    vertical-align: top;
     display: inline-block;
     width: 47%;
-    height: 150px;
+    height: 100px;
     background: #cea7a7;
 }
-.content>.matchContent>.players>.red>.players
+
+.content>.matchContent>.players>.red>.players1
 {
     display: inline-block;
-    width: 60%;
-    height: 30px;
+    width: 100%;
+    height: 20px;
     background: none;
-    text-align: left;
+    text-align: center;
+}
+.content>.matchContent>.players>.red>.players2
+{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background: none;
+    text-align: center;
+    vertical-align: center;
+    background: #ce8081;
 }
 .content>.matchContent>.players>.blue
 {
+    vertical-align: top;
     display: inline-block;
     width: 47%;
-    height: 150px;
+    height: 100px;
     background: #a3cfec;
 
 }
-.content>.matchContent>.players>.blue>.players
+.content>.matchContent>.players>.blue>.players1
 {
     display: inline-block;
-    width: 60%;
-    height: 30px;
+    width: 100%;
+    height: 20px;
     background: none;
-    text-align: left;
+    text-align: center;
+}
+.content>.matchContent>.players>.blue>.players2
+{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background: none;
+    text-align: center;
+    background: #78c4ec;
+
 }
 .deadspacebottom
 {
     width: 100%;
     height: 20px;
+    margin-top: 80px;
+    vertical-align: top;
     position: relative;
 
 }

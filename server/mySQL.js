@@ -7,7 +7,7 @@ function SQL() {
         database: 'leaguedb'
     });
     this.connection.connect(function(err) {
-        if(err) throw err;
+
         console.log("Connected to Database");
     });
 }
@@ -17,7 +17,7 @@ SQL.prototype.insert = function(items) {
         query += items[i] + ","
     }
     query += items[items.length] + ")";
-    
+
 }
 SQL.prototype.insertNestedArray = function(nestedArray, name) {
     //console.log(nestedArray);
@@ -38,11 +38,11 @@ SQL.prototype.insertNestedArray = function(nestedArray, name) {
 //selects form a table. where arg is in sql syntax
 //wherearg is of the form "WHERE x=y"
 SQL.prototype.select = function(table, whereArg, callback) {
-    var sqlText = "SELECT * FROM " + table + " " + whereArg; 
+    var sqlText = "SELECT * FROM " + table + " " + whereArg;
     this.connection.query(sqlText, function(err, result) {
         callback(result);
     });
-    
+
 }
 
 module.exports = SQL;
