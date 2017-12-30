@@ -133,8 +133,8 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     for(var z in gamesList)
     {
         // this currently returns undefined everything
-        console.log(gamesList[z].participants[idList[z] - 1].kills  + " | " + gamesList[kdaelement].participants[idList[z] - 1].deaths  + " | " + gamesList[kdaelement].participants[idList[z] - 1].assists);
-        document.getElementById("KDAcontent" + kdaelement + "-1").innerHTML = gamesList[kdaelement].participants[idList[z] - 1].kills  + " | " + gamesList[kdaelement].participants[idList[z] - 1].deaths  + " | " + gamesList[kdaelement].participants[idList[z] - 1].assists;
+        if(z > 7) break;
+        document.getElementById("KDAcontent" + z + "-1").innerHTML = gamesList[z].participants[idList[z] - 1].stats.kills  + " | " + gamesList[z].participants[idList[z] - 1].stats.deaths  + " | " + gamesList[z].participants[idList[z] - 1].stats.assists;
     }
 });
 
