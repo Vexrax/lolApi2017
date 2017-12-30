@@ -1,0 +1,2202 @@
+{
+    "type": "champion",
+    "version": "7.24.2",
+    "data": {
+        "MonkeyKing": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Wukong",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Monkey King",
+            "key": "MonkeyKing",
+            "id": 62
+        },
+        "Jax": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Jax",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "Grandmaster at Arms",
+            "key": "Jax",
+            "id": 24
+        },
+        "Fiddlesticks": {
+            "info": {
+                "difficulty": 9,
+                "attack": 2,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Fiddlesticks",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Harbinger of Doom",
+            "key": "Fiddlesticks",
+            "id": 9
+        },
+        "Shaco": {
+            "info": {
+                "difficulty": 9,
+                "attack": 8,
+                "defense": 4,
+                "magic": 6
+            },
+            "name": "Shaco",
+            "tags": [
+                "Assassin"
+            ],
+            "title": "the Demon Jester",
+            "key": "Shaco",
+            "id": 35
+        },
+        "Warwick": {
+            "info": {
+                "difficulty": 3,
+                "attack": 9,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Warwick",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Uncaged Wrath of Zaun",
+            "key": "Warwick",
+            "id": 19
+        },
+        "Xayah": {
+            "info": {
+                "difficulty": 5,
+                "attack": 10,
+                "defense": 6,
+                "magic": 1
+            },
+            "name": "Xayah",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Rebel",
+            "key": "Xayah",
+            "id": 498
+        },
+        "Nidalee": {
+            "info": {
+                "difficulty": 8,
+                "attack": 5,
+                "defense": 4,
+                "magic": 7
+            },
+            "name": "Nidalee",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Bestial Huntress",
+            "key": "Nidalee",
+            "id": 76
+        },
+        "Zyra": {
+            "info": {
+                "difficulty": 7,
+                "attack": 4,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Zyra",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "Rise of the Thorns",
+            "key": "Zyra",
+            "id": 143
+        },
+        "Kled": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 2,
+                "magic": 2
+            },
+            "name": "Kled",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Cantankerous Cavalier",
+            "key": "Kled",
+            "id": 240
+        },
+        "Brand": {
+            "info": {
+                "difficulty": 4,
+                "attack": 2,
+                "defense": 2,
+                "magic": 9
+            },
+            "name": "Brand",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Burning Vengeance",
+            "key": "Brand",
+            "id": 63
+        },
+        "Rammus": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 10,
+                "magic": 5
+            },
+            "name": "Rammus",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "the Armordillo",
+            "key": "Rammus",
+            "id": 33
+        },
+        "Illaoi": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Illaoi",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Kraken Priestess",
+            "key": "Illaoi",
+            "id": 420
+        },
+        "Corki": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 3,
+                "magic": 6
+            },
+            "name": "Corki",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Daring Bombardier",
+            "key": "Corki",
+            "id": 42
+        },
+        "Braum": {
+            "info": {
+                "difficulty": 3,
+                "attack": 3,
+                "defense": 9,
+                "magic": 4
+            },
+            "name": "Braum",
+            "tags": [
+                "Support",
+                "Tank"
+            ],
+            "title": "the Heart of the Freljord",
+            "key": "Braum",
+            "id": 201
+        },
+        "Darius": {
+            "info": {
+                "difficulty": 2,
+                "attack": 9,
+                "defense": 5,
+                "magic": 1
+            },
+            "name": "Darius",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Hand of Noxus",
+            "key": "Darius",
+            "id": 122
+        },
+        "Tryndamere": {
+            "info": {
+                "difficulty": 5,
+                "attack": 10,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Tryndamere",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Barbarian King",
+            "key": "Tryndamere",
+            "id": 23
+        },
+        "MissFortune": {
+            "info": {
+                "difficulty": 1,
+                "attack": 8,
+                "defense": 2,
+                "magic": 5
+            },
+            "name": "Miss Fortune",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Bounty Hunter",
+            "key": "MissFortune",
+            "id": 21
+        },
+        "Yorick": {
+            "info": {
+                "difficulty": 6,
+                "attack": 6,
+                "defense": 6,
+                "magic": 4
+            },
+            "name": "Yorick",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "Shepherd of Souls",
+            "key": "Yorick",
+            "id": 83
+        },
+        "Xerath": {
+            "info": {
+                "difficulty": 8,
+                "attack": 1,
+                "defense": 3,
+                "magic": 10
+            },
+            "name": "Xerath",
+            "tags": [
+                "Mage",
+                "Assassin"
+            ],
+            "title": "the Magus Ascendant",
+            "key": "Xerath",
+            "id": 101
+        },
+        "Sivir": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Sivir",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Battle Mistress",
+            "key": "Sivir",
+            "id": 15
+        },
+        "Riven": {
+            "info": {
+                "difficulty": 8,
+                "attack": 8,
+                "defense": 5,
+                "magic": 1
+            },
+            "name": "Riven",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Exile",
+            "key": "Riven",
+            "id": 92
+        },
+        "Orianna": {
+            "info": {
+                "difficulty": 7,
+                "attack": 4,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Orianna",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Lady of Clockwork",
+            "key": "Orianna",
+            "id": 61
+        },
+        "Gangplank": {
+            "info": {
+                "difficulty": 9,
+                "attack": 7,
+                "defense": 6,
+                "magic": 4
+            },
+            "name": "Gangplank",
+            "tags": [
+                "Fighter"
+            ],
+            "title": "the Saltwater Scourge",
+            "key": "Gangplank",
+            "id": 41
+        },
+        "Malphite": {
+            "info": {
+                "difficulty": 2,
+                "attack": 5,
+                "defense": 9,
+                "magic": 7
+            },
+            "name": "Malphite",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "Shard of the Monolith",
+            "key": "Malphite",
+            "id": 54
+        },
+        "Poppy": {
+            "info": {
+                "difficulty": 6,
+                "attack": 6,
+                "defense": 7,
+                "magic": 2
+            },
+            "name": "Poppy",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "Keeper of the Hammer",
+            "key": "Poppy",
+            "id": 78
+        },
+        "Karthus": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Karthus",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Deathsinger",
+            "key": "Karthus",
+            "id": 30
+        },
+        "Jayce": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Jayce",
+            "tags": [
+                "Fighter",
+                "Marksman"
+            ],
+            "title": "the Defender of Tomorrow",
+            "key": "Jayce",
+            "id": 126
+        },
+        "Nunu": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 6,
+                "magic": 7
+            },
+            "name": "Nunu",
+            "tags": [
+                "Support",
+                "Fighter"
+            ],
+            "title": "the Yeti Rider",
+            "key": "Nunu",
+            "id": 20
+        },
+        "Trundle": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 6,
+                "magic": 2
+            },
+            "name": "Trundle",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Troll King",
+            "key": "Trundle",
+            "id": 48
+        },
+        "Graves": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Graves",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Outlaw",
+            "key": "Graves",
+            "id": 104
+        },
+        "Zoe": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 7,
+                "magic": 8
+            },
+            "name": "Zoe",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Aspect of Twilight",
+            "key": "Zoe",
+            "id": 142
+        },
+        "Gnar": {
+            "info": {
+                "difficulty": 8,
+                "attack": 6,
+                "defense": 5,
+                "magic": 5
+            },
+            "name": "Gnar",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Missing Link",
+            "key": "Gnar",
+            "id": 150
+        },
+        "Lux": {
+            "info": {
+                "difficulty": 5,
+                "attack": 2,
+                "defense": 4,
+                "magic": 9
+            },
+            "name": "Lux",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Lady of Luminosity",
+            "key": "Lux",
+            "id": 99
+        },
+        "Shyvana": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Shyvana",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Half-Dragon",
+            "key": "Shyvana",
+            "id": 102
+        },
+        "Renekton": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Renekton",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Butcher of the Sands",
+            "key": "Renekton",
+            "id": 58
+        },
+        "Fiora": {
+            "info": {
+                "difficulty": 3,
+                "attack": 10,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Fiora",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Grand Duelist",
+            "key": "Fiora",
+            "id": 114
+        },
+        "Jinx": {
+            "info": {
+                "difficulty": 6,
+                "attack": 9,
+                "defense": 2,
+                "magic": 4
+            },
+            "name": "Jinx",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Loose Cannon",
+            "key": "Jinx",
+            "id": 222
+        },
+        "Kalista": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 2,
+                "magic": 4
+            },
+            "name": "Kalista",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Spear of Vengeance",
+            "key": "Kalista",
+            "id": 429
+        },
+        "Fizz": {
+            "info": {
+                "difficulty": 6,
+                "attack": 6,
+                "defense": 4,
+                "magic": 7
+            },
+            "name": "Fizz",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Tidal Trickster",
+            "key": "Fizz",
+            "id": 105
+        },
+        "Kassadin": {
+            "info": {
+                "difficulty": 8,
+                "attack": 3,
+                "defense": 5,
+                "magic": 8
+            },
+            "name": "Kassadin",
+            "tags": [
+                "Assassin",
+                "Mage"
+            ],
+            "title": "the Void Walker",
+            "key": "Kassadin",
+            "id": 38
+        },
+        "Sona": {
+            "info": {
+                "difficulty": 4,
+                "attack": 5,
+                "defense": 2,
+                "magic": 8
+            },
+            "name": "Sona",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "Maven of the Strings",
+            "key": "Sona",
+            "id": 37
+        },
+        "Irelia": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 4,
+                "magic": 5
+            },
+            "name": "Irelia",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Will of the Blades",
+            "key": "Irelia",
+            "id": 39
+        },
+        "Viktor": {
+            "info": {
+                "difficulty": 9,
+                "attack": 2,
+                "defense": 4,
+                "magic": 10
+            },
+            "name": "Viktor",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Machine Herald",
+            "key": "Viktor",
+            "id": 112
+        },
+        "Rakan": {
+            "info": {
+                "difficulty": 5,
+                "attack": 2,
+                "defense": 4,
+                "magic": 8
+            },
+            "name": "Rakan",
+            "tags": [
+                "Support"
+            ],
+            "title": "The Charmer",
+            "key": "Rakan",
+            "id": 497
+        },
+        "Kindred": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 2,
+                "magic": 2
+            },
+            "name": "Kindred",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "The Eternal Hunters",
+            "key": "Kindred",
+            "id": 203
+        },
+        "Cassiopeia": {
+            "info": {
+                "difficulty": 10,
+                "attack": 2,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Cassiopeia",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Serpent's Embrace",
+            "key": "Cassiopeia",
+            "id": 69
+        },
+        "Maokai": {
+            "info": {
+                "difficulty": 3,
+                "attack": 3,
+                "defense": 8,
+                "magic": 6
+            },
+            "name": "Maokai",
+            "tags": [
+                "Tank",
+                "Mage"
+            ],
+            "title": "the Twisted Treant",
+            "key": "Maokai",
+            "id": 57
+        },
+        "Ornn": {
+            "info": {
+                "difficulty": 5,
+                "attack": 5,
+                "defense": 9,
+                "magic": 3
+            },
+            "name": "Ornn",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "The Fire below the Mountain",
+            "key": "Ornn",
+            "id": 516
+        },
+        "Thresh": {
+            "info": {
+                "difficulty": 7,
+                "attack": 5,
+                "defense": 6,
+                "magic": 6
+            },
+            "name": "Thresh",
+            "tags": [
+                "Support",
+                "Fighter"
+            ],
+            "title": "the Chain Warden",
+            "key": "Thresh",
+            "id": 412
+        },
+        "Kayle": {
+            "info": {
+                "difficulty": 7,
+                "attack": 6,
+                "defense": 6,
+                "magic": 7
+            },
+            "name": "Kayle",
+            "tags": [
+                "Fighter",
+                "Support"
+            ],
+            "title": "The Judicator",
+            "key": "Kayle",
+            "id": 10
+        },
+        "Hecarim": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 6,
+                "magic": 4
+            },
+            "name": "Hecarim",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Shadow of War",
+            "key": "Hecarim",
+            "id": 120
+        },
+        "Khazix": {
+            "info": {
+                "difficulty": 6,
+                "attack": 9,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Kha'Zix",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Voidreaver",
+            "key": "Khazix",
+            "id": 121
+        },
+        "Olaf": {
+            "info": {
+                "difficulty": 3,
+                "attack": 9,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Olaf",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Berserker",
+            "key": "Olaf",
+            "id": 2
+        },
+        "Ziggs": {
+            "info": {
+                "difficulty": 4,
+                "attack": 2,
+                "defense": 4,
+                "magic": 9
+            },
+            "name": "Ziggs",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Hexplosives Expert",
+            "key": "Ziggs",
+            "id": 115
+        },
+        "Syndra": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Syndra",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Dark Sovereign",
+            "key": "Syndra",
+            "id": 134
+        },
+        "DrMundo": {
+            "info": {
+                "difficulty": 5,
+                "attack": 5,
+                "defense": 7,
+                "magic": 6
+            },
+            "name": "Dr. Mundo",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Madman of Zaun",
+            "key": "DrMundo",
+            "id": 36
+        },
+        "Karma": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 7,
+                "magic": 8
+            },
+            "name": "Karma",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Enlightened One",
+            "key": "Karma",
+            "id": 43
+        },
+        "Annie": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 3,
+                "magic": 10
+            },
+            "name": "Annie",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Dark Child",
+            "key": "Annie",
+            "id": 1
+        },
+        "Akali": {
+            "info": {
+                "difficulty": 7,
+                "attack": 5,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Akali",
+            "tags": [
+                "Assassin"
+            ],
+            "title": "the Fist of Shadow",
+            "key": "Akali",
+            "id": 84
+        },
+        "Volibear": {
+            "info": {
+                "difficulty": 3,
+                "attack": 7,
+                "defense": 7,
+                "magic": 4
+            },
+            "name": "Volibear",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Thunder's Roar",
+            "key": "Volibear",
+            "id": 106
+        },
+        "Yasuo": {
+            "info": {
+                "difficulty": 10,
+                "attack": 8,
+                "defense": 4,
+                "magic": 4
+            },
+            "name": "Yasuo",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Unforgiven",
+            "key": "Yasuo",
+            "id": 157
+        },
+        "Kennen": {
+            "info": {
+                "difficulty": 4,
+                "attack": 6,
+                "defense": 4,
+                "magic": 7
+            },
+            "name": "Kennen",
+            "tags": [
+                "Mage",
+                "Marksman"
+            ],
+            "title": "the Heart of the Tempest",
+            "key": "Kennen",
+            "id": 85
+        },
+        "Rengar": {
+            "info": {
+                "difficulty": 8,
+                "attack": 7,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Rengar",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Pridestalker",
+            "key": "Rengar",
+            "id": 107
+        },
+        "Ryze": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Ryze",
+            "tags": [
+                "Mage",
+                "Fighter"
+            ],
+            "title": "the Rune Mage",
+            "key": "Ryze",
+            "id": 13
+        },
+        "Shen": {
+            "info": {
+                "difficulty": 4,
+                "attack": 3,
+                "defense": 9,
+                "magic": 3
+            },
+            "name": "Shen",
+            "tags": [
+                "Tank"
+            ],
+            "title": "the Eye of Twilight",
+            "key": "Shen",
+            "id": 98
+        },
+        "Zac": {
+            "info": {
+                "difficulty": 8,
+                "attack": 3,
+                "defense": 7,
+                "magic": 7
+            },
+            "name": "Zac",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "the Secret Weapon",
+            "key": "Zac",
+            "id": 154
+        },
+        "Talon": {
+            "info": {
+                "difficulty": 7,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Talon",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Blade's Shadow",
+            "key": "Talon",
+            "id": 91
+        },
+        "Swain": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 6,
+                "magic": 9
+            },
+            "name": "Swain",
+            "tags": [
+                "Mage",
+                "Fighter"
+            ],
+            "title": "the Master Tactician",
+            "key": "Swain",
+            "id": 50
+        },
+        "Bard": {
+            "info": {
+                "difficulty": 9,
+                "attack": 4,
+                "defense": 4,
+                "magic": 5
+            },
+            "name": "Bard",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Wandering Caretaker",
+            "key": "Bard",
+            "id": 432
+        },
+        "Sion": {
+            "info": {
+                "difficulty": 5,
+                "attack": 5,
+                "defense": 9,
+                "magic": 3
+            },
+            "name": "Sion",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "The Undead Juggernaut",
+            "key": "Sion",
+            "id": 14
+        },
+        "Vayne": {
+            "info": {
+                "difficulty": 8,
+                "attack": 10,
+                "defense": 1,
+                "magic": 1
+            },
+            "name": "Vayne",
+            "tags": [
+                "Marksman",
+                "Assassin"
+            ],
+            "title": "the Night Hunter",
+            "key": "Vayne",
+            "id": 67
+        },
+        "Nasus": {
+            "info": {
+                "difficulty": 6,
+                "attack": 7,
+                "defense": 5,
+                "magic": 6
+            },
+            "name": "Nasus",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Curator of the Sands",
+            "key": "Nasus",
+            "id": 75
+        },
+        "Kayn": {
+            "info": {
+                "difficulty": 8,
+                "attack": 10,
+                "defense": 6,
+                "magic": 1
+            },
+            "name": "Kayn",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Shadow Reaper",
+            "key": "Kayn",
+            "id": 141
+        },
+        "TwistedFate": {
+            "info": {
+                "difficulty": 9,
+                "attack": 6,
+                "defense": 2,
+                "magic": 6
+            },
+            "name": "Twisted Fate",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Card Master",
+            "key": "TwistedFate",
+            "id": 4
+        },
+        "Chogath": {
+            "info": {
+                "difficulty": 5,
+                "attack": 3,
+                "defense": 7,
+                "magic": 7
+            },
+            "name": "Cho'Gath",
+            "tags": [
+                "Tank",
+                "Mage"
+            ],
+            "title": "the Terror of the Void",
+            "key": "Chogath",
+            "id": 31
+        },
+        "Udyr": {
+            "info": {
+                "difficulty": 7,
+                "attack": 8,
+                "defense": 7,
+                "magic": 4
+            },
+            "name": "Udyr",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Spirit Walker",
+            "key": "Udyr",
+            "id": 77
+        },
+        "Lucian": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Lucian",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Purifier",
+            "key": "Lucian",
+            "id": 236
+        },
+        "Ivern": {
+            "info": {
+                "difficulty": 7,
+                "attack": 3,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Ivern",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Green Father",
+            "key": "Ivern",
+            "id": 427
+        },
+        "Leona": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 8,
+                "magic": 3
+            },
+            "name": "Leona",
+            "tags": [
+                "Tank",
+                "Support"
+            ],
+            "title": "the Radiant Dawn",
+            "key": "Leona",
+            "id": 89
+        },
+        "Caitlyn": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 2,
+                "magic": 2
+            },
+            "name": "Caitlyn",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Sheriff of Piltover",
+            "key": "Caitlyn",
+            "id": 51
+        },
+        "Sejuani": {
+            "info": {
+                "difficulty": 4,
+                "attack": 5,
+                "defense": 7,
+                "magic": 6
+            },
+            "name": "Sejuani",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "Fury of the North",
+            "key": "Sejuani",
+            "id": 113
+        },
+        "Nocturne": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Nocturne",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Eternal Nightmare",
+            "key": "Nocturne",
+            "id": 56
+        },
+        "Zilean": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 5,
+                "magic": 8
+            },
+            "name": "Zilean",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Chronokeeper",
+            "key": "Zilean",
+            "id": 26
+        },
+        "Azir": {
+            "info": {
+                "difficulty": 9,
+                "attack": 6,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Azir",
+            "tags": [
+                "Mage",
+                "Marksman"
+            ],
+            "title": "the Emperor of the Sands",
+            "key": "Azir",
+            "id": 268
+        },
+        "Rumble": {
+            "info": {
+                "difficulty": 10,
+                "attack": 3,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Rumble",
+            "tags": [
+                "Fighter",
+                "Mage"
+            ],
+            "title": "the Mechanized Menace",
+            "key": "Rumble",
+            "id": 68
+        },
+        "Morgana": {
+            "info": {
+                "difficulty": 1,
+                "attack": 1,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Morgana",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "Fallen Angel",
+            "key": "Morgana",
+            "id": 25
+        },
+        "Taliyah": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 7,
+                "magic": 8
+            },
+            "name": "Taliyah",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Stoneweaver",
+            "key": "Taliyah",
+            "id": 163
+        },
+        "Teemo": {
+            "info": {
+                "difficulty": 6,
+                "attack": 5,
+                "defense": 3,
+                "magic": 7
+            },
+            "name": "Teemo",
+            "tags": [
+                "Marksman",
+                "Assassin"
+            ],
+            "title": "the Swift Scout",
+            "key": "Teemo",
+            "id": 17
+        },
+        "Urgot": {
+            "info": {
+                "difficulty": 8,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Urgot",
+            "tags": [
+                "Fighter",
+                "Marksman"
+            ],
+            "title": "the Dreadnought",
+            "key": "Urgot",
+            "id": 6
+        },
+        "Amumu": {
+            "info": {
+                "difficulty": 3,
+                "attack": 2,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Amumu",
+            "tags": [
+                "Tank",
+                "Mage"
+            ],
+            "title": "the Sad Mummy",
+            "key": "Amumu",
+            "id": 32
+        },
+        "Galio": {
+            "info": {
+                "difficulty": 5,
+                "attack": 1,
+                "defense": 10,
+                "magic": 6
+            },
+            "name": "Galio",
+            "tags": [
+                "Tank",
+                "Mage"
+            ],
+            "title": "the Colossus",
+            "key": "Galio",
+            "id": 3
+        },
+        "Heimerdinger": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Heimerdinger",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Revered Inventor",
+            "key": "Heimerdinger",
+            "id": 74
+        },
+        "Anivia": {
+            "info": {
+                "difficulty": 10,
+                "attack": 1,
+                "defense": 4,
+                "magic": 10
+            },
+            "name": "Anivia",
+            "tags": [
+                "Mage",
+                "Support"
+            ],
+            "title": "the Cryophoenix",
+            "key": "Anivia",
+            "id": 34
+        },
+        "Ashe": {
+            "info": {
+                "difficulty": 4,
+                "attack": 7,
+                "defense": 3,
+                "magic": 2
+            },
+            "name": "Ashe",
+            "tags": [
+                "Marksman",
+                "Support"
+            ],
+            "title": "the Frost Archer",
+            "key": "Ashe",
+            "id": 22
+        },
+        "Velkoz": {
+            "info": {
+                "difficulty": 8,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Vel'Koz",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Eye of the Void",
+            "key": "Velkoz",
+            "id": 161
+        },
+        "Singed": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 8,
+                "magic": 7
+            },
+            "name": "Singed",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "the Mad Chemist",
+            "key": "Singed",
+            "id": 27
+        },
+        "Skarner": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 6,
+                "magic": 5
+            },
+            "name": "Skarner",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Crystal Vanguard",
+            "key": "Skarner",
+            "id": 72
+        },
+        "Varus": {
+            "info": {
+                "difficulty": 2,
+                "attack": 7,
+                "defense": 3,
+                "magic": 4
+            },
+            "name": "Varus",
+            "tags": [
+                "Marksman",
+                "Mage"
+            ],
+            "title": "the Arrow of Retribution",
+            "key": "Varus",
+            "id": 110
+        },
+        "Twitch": {
+            "info": {
+                "difficulty": 6,
+                "attack": 9,
+                "defense": 2,
+                "magic": 3
+            },
+            "name": "Twitch",
+            "tags": [
+                "Marksman",
+                "Assassin"
+            ],
+            "title": "the Plague Rat",
+            "key": "Twitch",
+            "id": 29
+        },
+        "Garen": {
+            "info": {
+                "difficulty": 5,
+                "attack": 7,
+                "defense": 7,
+                "magic": 1
+            },
+            "name": "Garen",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "The Might of Demacia",
+            "key": "Garen",
+            "id": 86
+        },
+        "Blitzcrank": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 8,
+                "magic": 5
+            },
+            "name": "Blitzcrank",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "the Great Steam Golem",
+            "key": "Blitzcrank",
+            "id": 53
+        },
+        "MasterYi": {
+            "info": {
+                "difficulty": 4,
+                "attack": 10,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Master Yi",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Wuju Bladesman",
+            "key": "MasterYi",
+            "id": 11
+        },
+        "Elise": {
+            "info": {
+                "difficulty": 9,
+                "attack": 6,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Elise",
+            "tags": [
+                "Mage",
+                "Fighter"
+            ],
+            "title": "the Spider Queen",
+            "key": "Elise",
+            "id": 60
+        },
+        "Alistar": {
+            "info": {
+                "difficulty": 7,
+                "attack": 6,
+                "defense": 9,
+                "magic": 5
+            },
+            "name": "Alistar",
+            "tags": [
+                "Tank",
+                "Support"
+            ],
+            "title": "the Minotaur",
+            "key": "Alistar",
+            "id": 12
+        },
+        "Katarina": {
+            "info": {
+                "difficulty": 8,
+                "attack": 4,
+                "defense": 3,
+                "magic": 9
+            },
+            "name": "Katarina",
+            "tags": [
+                "Assassin",
+                "Mage"
+            ],
+            "title": "the Sinister Blade",
+            "key": "Katarina",
+            "id": 55
+        },
+        "Ekko": {
+            "info": {
+                "difficulty": 8,
+                "attack": 5,
+                "defense": 3,
+                "magic": 7
+            },
+            "name": "Ekko",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Boy Who Shattered Time",
+            "key": "Ekko",
+            "id": 245
+        },
+        "Mordekaiser": {
+            "info": {
+                "difficulty": 4,
+                "attack": 4,
+                "defense": 6,
+                "magic": 7
+            },
+            "name": "Mordekaiser",
+            "tags": [
+                "Fighter"
+            ],
+            "title": "the Iron Revenant",
+            "key": "Mordekaiser",
+            "id": 82
+        },
+        "Lulu": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Lulu",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Fae Sorceress",
+            "key": "Lulu",
+            "id": 117
+        },
+        "Camille": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Camille",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Steel Shadow",
+            "key": "Camille",
+            "id": 164
+        },
+        "Aatrox": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Aatrox",
+            "tags": [
+                "Fighter",
+                "Tank"
+            ],
+            "title": "the Darkin Blade",
+            "key": "Aatrox",
+            "id": 266
+        },
+        "Draven": {
+            "info": {
+                "difficulty": 8,
+                "attack": 9,
+                "defense": 3,
+                "magic": 1
+            },
+            "name": "Draven",
+            "tags": [
+                "Marksman"
+            ],
+            "title": "the Glorious Executioner",
+            "key": "Draven",
+            "id": 119
+        },
+        "TahmKench": {
+            "info": {
+                "difficulty": 5,
+                "attack": 3,
+                "defense": 9,
+                "magic": 6
+            },
+            "name": "Tahm Kench",
+            "tags": [
+                "Support",
+                "Tank"
+            ],
+            "title": "the River King",
+            "key": "TahmKench",
+            "id": 223
+        },
+        "Pantheon": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 4,
+                "magic": 3
+            },
+            "name": "Pantheon",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Artisan of War",
+            "key": "Pantheon",
+            "id": 80
+        },
+        "XinZhao": {
+            "info": {
+                "difficulty": 2,
+                "attack": 8,
+                "defense": 6,
+                "magic": 3
+            },
+            "name": "Xin Zhao",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Seneschal of Demacia",
+            "key": "XinZhao",
+            "id": 5
+        },
+        "AurelionSol": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 3,
+                "magic": 8
+            },
+            "name": "Aurelion Sol",
+            "tags": [
+                "Mage",
+                "Fighter"
+            ],
+            "title": "The Star Forger",
+            "key": "AurelionSol",
+            "id": 136
+        },
+        "LeeSin": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Lee Sin",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Blind Monk",
+            "key": "LeeSin",
+            "id": 64
+        },
+        "Taric": {
+            "info": {
+                "difficulty": 3,
+                "attack": 4,
+                "defense": 8,
+                "magic": 5
+            },
+            "name": "Taric",
+            "tags": [
+                "Support",
+                "Fighter"
+            ],
+            "title": "the Shield of Valoran",
+            "key": "Taric",
+            "id": 44
+        },
+        "Malzahar": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 2,
+                "magic": 9
+            },
+            "name": "Malzahar",
+            "tags": [
+                "Mage",
+                "Assassin"
+            ],
+            "title": "the Prophet of the Void",
+            "key": "Malzahar",
+            "id": 90
+        },
+        "Lissandra": {
+            "info": {
+                "difficulty": 6,
+                "attack": 2,
+                "defense": 5,
+                "magic": 8
+            },
+            "name": "Lissandra",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Ice Witch",
+            "key": "Lissandra",
+            "id": 127
+        },
+        "Diana": {
+            "info": {
+                "difficulty": 4,
+                "attack": 7,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Diana",
+            "tags": [
+                "Fighter",
+                "Mage"
+            ],
+            "title": "Scorn of the Moon",
+            "key": "Diana",
+            "id": 131
+        },
+        "Tristana": {
+            "info": {
+                "difficulty": 4,
+                "attack": 9,
+                "defense": 3,
+                "magic": 5
+            },
+            "name": "Tristana",
+            "tags": [
+                "Marksman",
+                "Assassin"
+            ],
+            "title": "the Yordle Gunner",
+            "key": "Tristana",
+            "id": 18
+        },
+        "RekSai": {
+            "info": {
+                "difficulty": 3,
+                "attack": 8,
+                "defense": 5,
+                "magic": 2
+            },
+            "name": "Rek'Sai",
+            "tags": [
+                "Fighter"
+            ],
+            "title": "the Void Burrower",
+            "key": "RekSai",
+            "id": 421
+        },
+        "Vladimir": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 6,
+                "magic": 8
+            },
+            "name": "Vladimir",
+            "tags": [
+                "Mage",
+                "Tank"
+            ],
+            "title": "the Crimson Reaper",
+            "key": "Vladimir",
+            "id": 8
+        },
+        "JarvanIV": {
+            "info": {
+                "difficulty": 5,
+                "attack": 6,
+                "defense": 8,
+                "magic": 3
+            },
+            "name": "Jarvan IV",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "the Exemplar of Demacia",
+            "key": "JarvanIV",
+            "id": 59
+        },
+        "Nami": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 3,
+                "magic": 7
+            },
+            "name": "Nami",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Tidecaller",
+            "key": "Nami",
+            "id": 267
+        },
+        "Jhin": {
+            "info": {
+                "difficulty": 6,
+                "attack": 10,
+                "defense": 2,
+                "magic": 6
+            },
+            "name": "Jhin",
+            "tags": [
+                "Marksman",
+                "Assassin"
+            ],
+            "title": "the Virtuoso",
+            "key": "Jhin",
+            "id": 202
+        },
+        "Soraka": {
+            "info": {
+                "difficulty": 3,
+                "attack": 2,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Soraka",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Starchild",
+            "key": "Soraka",
+            "id": 16
+        },
+        "Veigar": {
+            "info": {
+                "difficulty": 7,
+                "attack": 2,
+                "defense": 2,
+                "magic": 10
+            },
+            "name": "Veigar",
+            "tags": [
+                "Mage"
+            ],
+            "title": "the Tiny Master of Evil",
+            "key": "Veigar",
+            "id": 45
+        },
+        "Janna": {
+            "info": {
+                "difficulty": 7,
+                "attack": 3,
+                "defense": 5,
+                "magic": 7
+            },
+            "name": "Janna",
+            "tags": [
+                "Support",
+                "Mage"
+            ],
+            "title": "the Storm's Fury",
+            "key": "Janna",
+            "id": 40
+        },
+        "Nautilus": {
+            "info": {
+                "difficulty": 6,
+                "attack": 4,
+                "defense": 6,
+                "magic": 6
+            },
+            "name": "Nautilus",
+            "tags": [
+                "Tank",
+                "Fighter"
+            ],
+            "title": "the Titan of the Depths",
+            "key": "Nautilus",
+            "id": 111
+        },
+        "Evelynn": {
+            "info": {
+                "difficulty": 10,
+                "attack": 4,
+                "defense": 2,
+                "magic": 7
+            },
+            "name": "Evelynn",
+            "tags": [
+                "Assassin",
+                "Mage"
+            ],
+            "title": "Agony's Embrace",
+            "key": "Evelynn",
+            "id": 28
+        },
+        "Gragas": {
+            "info": {
+                "difficulty": 5,
+                "attack": 4,
+                "defense": 7,
+                "magic": 6
+            },
+            "name": "Gragas",
+            "tags": [
+                "Fighter",
+                "Mage"
+            ],
+            "title": "the Rabble Rouser",
+            "key": "Gragas",
+            "id": 79
+        },
+        "Zed": {
+            "info": {
+                "difficulty": 7,
+                "attack": 9,
+                "defense": 2,
+                "magic": 1
+            },
+            "name": "Zed",
+            "tags": [
+                "Assassin",
+                "Fighter"
+            ],
+            "title": "the Master of Shadows",
+            "key": "Zed",
+            "id": 238
+        },
+        "Vi": {
+            "info": {
+                "difficulty": 4,
+                "attack": 8,
+                "defense": 5,
+                "magic": 3
+            },
+            "name": "Vi",
+            "tags": [
+                "Fighter",
+                "Assassin"
+            ],
+            "title": "the Piltover Enforcer",
+            "key": "Vi",
+            "id": 254
+        },
+        "KogMaw": {
+            "info": {
+                "difficulty": 6,
+                "attack": 8,
+                "defense": 2,
+                "magic": 5
+            },
+            "name": "Kog'Maw",
+            "tags": [
+                "Marksman",
+                "Mage"
+            ],
+            "title": "the Mouth of the Abyss",
+            "key": "KogMaw",
+            "id": 96
+        },
+        "Ahri": {
+            "info": {
+                "difficulty": 5,
+                "attack": 3,
+                "defense": 4,
+                "magic": 8
+            },
+            "name": "Ahri",
+            "tags": [
+                "Mage",
+                "Assassin"
+            ],
+            "title": "the Nine-Tailed Fox",
+            "key": "Ahri",
+            "id": 103
+        },
+        "Quinn": {
+            "info": {
+                "difficulty": 5,
+                "attack": 9,
+                "defense": 4,
+                "magic": 2
+            },
+            "name": "Quinn",
+            "tags": [
+                "Marksman",
+                "Fighter"
+            ],
+            "title": "Demacia's Wings",
+            "key": "Quinn",
+            "id": 133
+        },
+        "Leblanc": {
+            "info": {
+                "difficulty": 9,
+                "attack": 1,
+                "defense": 4,
+                "magic": 10
+            },
+            "name": "LeBlanc",
+            "tags": [
+                "Assassin",
+                "Mage"
+            ],
+            "title": "the Deceiver",
+            "key": "Leblanc",
+            "id": 7
+        },
+        "Ezreal": {
+            "info": {
+                "difficulty": 7,
+                "attack": 7,
+                "defense": 2,
+                "magic": 6
+            },
+            "name": "Ezreal",
+            "tags": [
+                "Marksman",
+                "Mage"
+            ],
+            "title": "the Prodigal Explorer",
+            "key": "Ezreal",
+            "id": 81
+        }
+    }
+}

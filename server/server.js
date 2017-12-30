@@ -2,6 +2,7 @@ var envs = require('dotenv');
 envs.config();
 const express = require('express');
 var path = require('path');
+var fs = require('fs');
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -131,17 +132,18 @@ function getRunesForGames(gameList, accId) {
 function idListToNameList(idList, callback) {
     //console.log(idList);
     var champList = [];
-    sql.select("champions", "", function(data) {
-        for(var i in idList) {
-            for(var t in data) {
-                //console.log(data[t].id);
-                if(idList[i] == data[t].id) {
-                    //console.log(data[t].name);                    
-                    champList.push(data[t].name.replace(/\s/g, ''));
-                }
+    file = JSON.parse(fs.readFileSync(__dirname + "//champions.json", "utf8"))
+        
+    var data = file.data
+    for(var i in idList) {
+        for(var t in data) {
+            //console.log(data[t].id);
+            if(idList[i] == data[t].id) {
+                //console.log(data[t].name);                    
+                champList.push(data[t].name.replace(/\s/g, ''));
             }
         }
-        console.log(champList);
-        callback(champList);
-    });
+    }
+    console.log(champList);
+    callback(champList);
 }
