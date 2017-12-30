@@ -121,19 +121,20 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         {
             break;
         }
-        document.getElementById("itemscontent" + m  + "-1").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item0 +".png";
-        document.getElementById("itemscontent" + m  + "-2").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item1 +".png";
-        document.getElementById("itemscontent" + m  + "-3").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item2 +".png";
-        document.getElementById("itemscontent" + m  + "-4").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item6 +".png"; //this element is trinket slot
-        document.getElementById("itemscontent" + m  + "-5").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item3 +".png";
-        document.getElementById("itemscontent" + m  + "-6").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item4 +".png";
-        document.getElementById("itemscontent" + m  + "-7").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[0] - 1].stats.item5 +".png";
+        document.getElementById("itemscontent" + m  + "-1").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item0 +".png";
+        document.getElementById("itemscontent" + m  + "-2").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item1 +".png";
+        document.getElementById("itemscontent" + m  + "-3").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item2 +".png";
+        document.getElementById("itemscontent" + m  + "-4").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item6 +".png"; //this element is trinket slot
+        document.getElementById("itemscontent" + m  + "-5").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item3 +".png";
+        document.getElementById("itemscontent" + m  + "-6").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item4 +".png";
+        document.getElementById("itemscontent" + m  + "-7").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item5 +".png";
         console.log(gamesList[m].participants[idList[0] - 1].stats.item6 +".png")
     }
-    for(var kdaelement in gamesList)
+    for(var z in gamesList)
     {
         // this currently returns undefined everything
-       //document.getElementById("KDAcontent" + kdaelement + "-1").innerHTML = gamesList[kdaelement].participants[idList[0] - 1].kills  + " | " + gamesList[kdaelement].participants[idList[0] - 1].deaths  + " | " + gamesList[kdaelement].participants[idList[0] - 1].assists;
+        console.log(gamesList[z].participants[idList[z] - 1].kills  + " | " + gamesList[kdaelement].participants[idList[z] - 1].deaths  + " | " + gamesList[kdaelement].participants[idList[z] - 1].assists);
+        document.getElementById("KDAcontent" + kdaelement + "-1").innerHTML = gamesList[kdaelement].participants[idList[z] - 1].kills  + " | " + gamesList[kdaelement].participants[idList[z] - 1].deaths  + " | " + gamesList[kdaelement].participants[idList[z] - 1].assists;
     }
 });
 
