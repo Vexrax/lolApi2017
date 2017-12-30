@@ -7,6 +7,7 @@ function SQL() {
         database: 'leaguedb',
         port: '3306'
     });
+    console.log("Trying to connect");
     this.connection.connect(function(err) {
         if(err) throw err;
         console.log("Connected to Database");
