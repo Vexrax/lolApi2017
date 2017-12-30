@@ -4,7 +4,8 @@ function SQL() {
         host: 'lolapi2017db.cgbnugcmne3f.us-west-1.rds.amazonaws.com',
         user: 'arek7000',
         password: 'fielding.',
-        database: 'leaguedb'
+        database: 'leaguedb',
+        port: '3306'
     });
     this.connection.connect(function(err) {
         if(err) throw err;

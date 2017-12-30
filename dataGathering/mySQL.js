@@ -1,9 +1,9 @@
 function SQL() {
     this.sql = require('mysql');
     this.connection = this.sql.createConnection({
-        host: 'localhost',
-        user: 'AFielding',
-        password: 'Arek7000',
+        host: 'lolapi2017db.cgbnugcmne3f.us-west-1.rds.amazonaws.com',
+        user: 'arek7000',
+        password: 'fielding.',
         database: 'leaguedb'
     });
     this.connection.connect(function(err) {
