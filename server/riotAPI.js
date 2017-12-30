@@ -20,6 +20,7 @@ riot.prototype.nameToSummonerID = function(name, callback) {
 }
 riot.prototype.nameToProfile = function(name, callback) {
     var uri = this.host + "/lol/summoner/v3/summoners/by-name/" + name + this.keyString;
+    console.log(uri);
     this.request(uri, function(err, res, body) {
         if(err) {
             throw err;

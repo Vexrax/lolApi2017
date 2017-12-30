@@ -4,6 +4,7 @@ var sql = new mySQL();
 function main() {
     getRuneList(function(runeList) {
         getChampionList(function(champList) {
+            //console.log(champList);
             champLoop(runeList, champList, 0);
         });
     });
@@ -24,9 +25,9 @@ function getChampionList(callback) {
 //async loop to go thorugh all champs
 //index is which champ we are on
 function champLoop(runeList, champList, index) {
+    
     //create rune array, this is where a single champs rune data will be stored before being passed to db
     var runeArray = [];
-    var pushArray = [];//uh need this cuz Im passing by value.
     for(var i in runeList) {
         //console.log(i);
         var rune = []; //this is a single rune
