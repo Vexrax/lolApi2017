@@ -262,6 +262,7 @@ Profile Page
 {
     display: inline-block;
     width: 50%;
+    min-width: 500px;
     height: 150px;
     vertical-align: 12px;
     margin: 5px auto;
@@ -346,14 +347,14 @@ Profile Page
 .content>.matchContent>.players>.red
 {
     display: inline-block;
-    width: 100px;
+    width: 47%;
     height: 150px;
     background: #cea7a7;
 }
 .content>.matchContent>.players>.red>.players
 {
     display: inline-block;
-    width: 60px;
+    width: 60%;
     height: 30px;
     background: none;
     text-align: left;
@@ -361,7 +362,7 @@ Profile Page
 .content>.matchContent>.players>.blue
 {
     display: inline-block;
-    width: 100px;
+    width: 47%;
     height: 150px;
     background: #a3cfec;
 
@@ -369,7 +370,7 @@ Profile Page
 .content>.matchContent>.players>.blue>.players
 {
     display: inline-block;
-    width: 60px;
+    width: 60%;
     height: 30px;
     background: none;
     text-align: left;
