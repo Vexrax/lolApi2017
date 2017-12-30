@@ -107,11 +107,16 @@ riot.prototype.getRecentGamesByName = function(name, callback) {
 
 riot.prototype.recentGameLoop = function(dataList, gameList, index, callback) {
     var self = this;
-    this.getGame(gameList.matches[index].gameId, function(body) {
-        dataList.push(body);
-        if(index < 9) self.recentGameLoop(dataList, gameList, index + 1, callback);
-        else callback(dataList);
-    });
+    try {
+        this.getGame(gameList.matches[index].gameId, function(body) {
+            dataList.push(body);
+            if(index < 9 && index < gameList.matches.length) self.recentGameLoop(dataList, gameList, index + 1, callback);
+            else callback(dataList);
+        });
+    } catch (error) {
+        callback("error");
+    }
+    
 }
 
 module.exports = riot;

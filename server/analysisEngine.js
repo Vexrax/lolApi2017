@@ -1,15 +1,20 @@
 function analysisEngine(riotApi) {
-    var riotAPI = require("./../dataGathering/riotAPI");
     this.riot = riotApi;
+    var mySQL = require("./mySQL");
+    this.sql = new mySQL();
 }
-//just pass a name here
-analysisEngine.prototype.summonerAnalysis = function(summonerName) {
-    //turn summoner name into profile
-    
+analysisEngine.prototype.summonerAnalysis = function(gameList, idList, runeList, callback) {
+    this.sql.select("rune_stats", "WHERE champId=" + )
 }
 analysisEngine.prototype.tests = function() {
     this.riot.nameToProfile("earleking", function(data) {
         console.log(data);
+    });
+}
+
+analysisEngine.prototype.getGameList = function(game, id, runes, callback) {
+    this.sql.select("rune_stats", "WHERE champId=" + game.participants[id - 1].championId, function(data) {
+        
     });
 }
 

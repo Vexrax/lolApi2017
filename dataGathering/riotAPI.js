@@ -88,7 +88,6 @@ riot.prototype.getRankBySummonerID = function(summID, callback) {
 riot.prototype.getChampData = function(callback) {
     uri = "https://na1.api.riotgames.com/lol/static-data/v3/champions?locale=en_US&tags=info&tags=tags&dataById=false&api_key=" + this.key;
     this.request(uri, function(err, res, body) {
-        console.log(uri);
         var json = JSON.parse(body);
         var champions = json.data;
         var championArr = [];

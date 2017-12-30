@@ -37,7 +37,17 @@ app.get('/:region', function(req, res){
 
 app.post('/', urlencodedParser, function (req, res) {
     //console.log(req.body);
-    res.redirect('http://localhost:3000/' + req.body.region + '/' + req.body.name);
+    riot.nameToProfile(req.body.name, function(profile) {
+        if(profile.name) {
+            console.log("Name found: " + profile.name);
+            console.log(profile);
+            res.redirect('http://localhost:3000/' + req.body.region + '/' + profile.name);            
+        }
+        else {
+            console.log("No Summoner Found");
+            io.emit("noSummFound");
+        }
+    });
     //res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 });
 
@@ -74,15 +84,19 @@ function getMatchHistory(name, socketId) {
     console.log("gettingHistory");
     
     riot.getRecentGamesByName(name, function(list, account) {
-        var runesList = getRunesForGames(list, account.accountId);
-        var reccList;
-        //runesList[1] is the list of participant ids
-        io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList);
+        if(list == "error") console.log("No games played");
+        else {
+            var runesList = getRunesForGames(list, account.accountId);
+            var reccList;
+            //runesList[1] is the list of participant ids
+            io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList);
+        }
+
    });
 }
 
 function getRunesForGames(gameList, accId) {
-    var gameRuneList = [], allGamesRuneList = [], idList = [], returnList = [];
+    var gameRuneList = [], allGamesRuneList = [], idList = [], returnList = [], champList = [];
     var playerId = 0;
     for(var i in gameList) {
         var curGame = gameList[i];
@@ -90,6 +104,7 @@ function getRunesForGames(gameList, accId) {
             if(curGame.participantIdentities[t].player.accountId == accId) {
                 playerId = curGame.participantIdentities[t].participantId;
                 idList.push(playerId);
+                champList.push(curGame.participants[t].championId);
             }
         }
         //error check
@@ -108,6 +123,11 @@ function getRunesForGames(gameList, accId) {
     }
     returnList.push(allGamesRuneList);
     returnList.push(idList);
+    returnList.push(champList);
     return returnList;
 }
 
+function idListToNameList(idList) {
+    var sql = require('./mySQL')
+    
+}
