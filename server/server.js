@@ -8,11 +8,11 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var analysisEngine = require('./analysisEngine');
 var riotAPI = require('./riotAPI');
-var riot = new riotAPI('RGAPI-fbc73695-a956-4e07-b64c-bc2850f0ae03');
+var riot = new riotAPI(process.env.RIOT_KEY);
 var mySQL = require('./mySQL');
 var sql = new mySQL();
 var analysis = new analysisEngine(riot);
-//analysis.setUp();//set it up bois
+analysis.setUp();//set it up bois
 var bodyParser = require('body-parser');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -88,8 +88,11 @@ function getMatchHistory(name, socketId) {
         else {
             var runesList = getRunesForGames(list, account.accountId);
             var reccList;
+            
             idListToNameList(runesList[2], function(champNameList) {
-                io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], reccList, champNameList);
+                analysis.summonerAnalysis(list, runesList[1], runesList[0], function(nRuneList, nPaths) {
+                    io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], nRuneList, champNameList);                    
+                });
                                 
             });
             //runesList[1] is the list of participant ids
@@ -127,7 +130,7 @@ function getRunesForGames(gameList, accId) {
     returnList.push(allGamesRuneList);
     returnList.push(idList);
     returnList.push(champList);
-    console.log(champList);
+    //console.log(champList);
     return returnList;
 }
 
@@ -146,6 +149,6 @@ function idListToNameList(idList, callback) {
             }
         }
     }
-    console.log(champList);
+    //console.log(champList);
     callback(champList);
 }
