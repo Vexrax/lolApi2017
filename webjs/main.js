@@ -31,7 +31,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
             break;
         }
         var sumID ="";
-        var sumswitch = gamesList[j].participants[idList[0] - 1].spell1Id;
+        var sumswitch = gamesList[j].participants[idList[j] - 1].spell1Id;
         console.log(sumswitch);
         switch(sumswitch)
         {
@@ -77,7 +77,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
             break;
         }
         sumID ="";
-        sumswitch = gamesList[k].participants[idList[0] - 1].spell2Id;
+        sumswitch = gamesList[k].participants[idList[k] - 1].spell2Id;
         switch(sumswitch)
         {
             case 1:
@@ -128,7 +128,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         document.getElementById("itemscontent" + m  + "-5").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item3 +".png";
         document.getElementById("itemscontent" + m  + "-6").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item4 +".png";
         document.getElementById("itemscontent" + m  + "-7").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item5 +".png";
-        console.log(gamesList[m].participants[idList[0] - 1].stats.item6 +".png")
+        console.log(gamesList[m].participants[idList[m] - 1].stats.item6 +".png")
     }
     for(var z in gamesList)
     {
