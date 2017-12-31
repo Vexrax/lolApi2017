@@ -21,11 +21,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static(path.join(__dirname, '/../')));
 
 app.get('/', function(req, res){
-    res.sendFile("./index.html");
+    res.sendFile(__dirname +"/index.html");
 });
 
 app.get('/:region/:name?', function(req, res){
-    res.sendFile("./SummonerPage.html");
+    res.sendFile(__dirname + "/SummonerPage.html");
 
 });
 //homePage Button
@@ -35,11 +35,11 @@ app.post('/:region/:name?', function(req, res){
 });
 
 app.get('/test', function(req, res){
-    res.sendFile("./404.html");
+    res.sendFile(__dirname + "/404.html");
 });
 
 app.get('/:region', function(req, res){
-    res.sendFile("./404.html");
+    res.sendFile(__dirname + "/404.html");
     console.log("Serving 404");
 });
 
