@@ -25,9 +25,13 @@ app.get('/', function(req, res){
 });
 
 app.get('/:region/:name?', function(req, res){
-    console.log("testing");
     res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 
+});
+//homePage Button
+app.post('/:region/:name?', function(req, res){
+    res.redirect('http:///99.247.49.193:3000/');            
+    
 });
 
 app.get('/test', function(req, res){
@@ -155,6 +159,10 @@ function idListToNameList(idList, callback) {
                 }
                 if(newName == "Wukong") {
                     newName = "MonkeyKing";
+                }
+                if(newName == "Kogmaw") {
+                    //riot pls. Why is this one inconsistant with the rest of x'y characters?
+                    newName = "KogMaw";
                 }
                 champList.push(newName);
             }

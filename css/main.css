@@ -161,6 +161,22 @@ input[type="text"], .table-container input
     background-color: #CF2424;
     cursor: pointer;
 }
+#insightButton {
+    font-size: 19px;
+    color: white;
+    background-color: #A62139;
+    border: 3px outset #CF2424;
+    border-radius: 4px;
+}
+#insightButton:active
+{
+    background-color: #CF2424;
+}
+#insightButton:hover
+{
+    background-color: #CF2424;
+    cursor: pointer;
+}
 .searchButtonSpaceSummonerPage
 {
     width: 100%;
