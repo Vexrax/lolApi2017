@@ -21,11 +21,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static(path.join(__dirname, '/../')));
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));
+    res.sendFile("/app/index.html");
 });
 
 app.get('/:region/:name?', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
+    res.sendFile("/app/SummonerPage.html");
 
 });
 //homePage Button
@@ -35,11 +35,11 @@ app.post('/:region/:name?', function(req, res){
 });
 
 app.get('/test', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));
+    res.sendFile("/app/404.html");
 });
 
 app.get('/:region', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));
+    res.sendFile("/app/404.html");
     console.log("Serving 404");
 });
 

@@ -1,2 +1,4 @@
 # lolApi2017
-For Riot API Challenge 2017
+Runic Insight by Vexrax and Earleking.
+
+Live Demo at:  https://runicinsight.herokuapp.com
