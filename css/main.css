@@ -527,16 +527,18 @@ RuneHelp Classes
 {
     width: 100%;
     height: 2400px;
-    display: inline-block;
     text-align: center;
     position: relative;
+    visibility: hidden;
+    display: none;
+
+
 }
 .infospace>.runeinfo
 {
     width: 50%;
     min-width: 1200px;
     height: 200px;
-    display: inline-block;
     text-align: center;
     background-color: #171a20;
 }

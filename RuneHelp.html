@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rune Help</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="SHORTCUT ICON" href="./Icons/shortcuticon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Quicksand" rel="stylesheet">
+</head>
+<body>
+    <form class="banner" method="post" action = '/'>
+        <input class="table-containerSummoner" id="Summoner Field" type ="text" name = "name" placeholder="Summoner Name" width="425">
+        <select id = "regionSelection2" name="region" title="region">
+            <option value="na">NA</option>
+            <option value="EUW">EUW</option>
+            <option value="KR">KR</option>
+            <option value="EUNE">EUNE</option>
+            <option value="BR">BR</option>
+            <option value="JP">JP</option>
+            <option value="OCE">OCE</option>
+            <option value="LAN">LAN</option>
+            <option value="LAS">LAS</option>
+            <option value="TR">TR</option>
+        </select>
+        <button class ="searchButtonSummonerPage" id="searchButton2" type="submit">
+            <strong>Search</strong>
+        </button>
+    </form>
+    <div class="title">
+        <p>INSIGHTS</p>
+    </div>
+    <div class="SummonerPrompt">
+        Lets understand the pros and cons of certain runes
+    </div>
+    <div class="SummonerPrompt">
+         Click on any of the paths.
+    </div>
+    <div class="DefaultSpaceRuneHelp">
+        <div class="TreeSelection">
+            <button class="Tree" id="button0">
+                <img src="./Icons/Runes/8000.png" width=100px height=100px>
+            </button>
+            <button class="Tree" id="button1">
+                <img src="./Icons/Runes/8100.png" width=100px height=100px>
+            </button>
+            <button class="Tree" id="button2">
+                <img src="./Icons/Runes/8200.png" width=100px height=100px>
+            </button>
+            <button class="Tree" id="button3">
+                <img src="./Icons/Runes/8300.png" width=100px height=100px>
+            </button>
+            <button class="Tree" id="button4">
+                <img src="./Icons/Runes/8400.png" width=100px height=100px>
+            </button>
+        </div>
+        <!– Precision ->
+        <div class="infospace">
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8005.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong in and out of lane, you generally want this on champs that utilize their autos. </p>
+                        <p>Your increased damage is taken from ALL sources which is really helpful for shreding tanks.</p>
+                        <p>You have larger windows of opportunity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8008.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Really strong on champions that build lots of attack speed.</p>
+                        <p>Strong on on hit champions who attack a lot.</p>
+                        <p>You have small windows of opportunity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8021.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong against poke lanes and losing matchups.</p>
+                        <p>Helps with kiting in teamfights.</p>
+                        <p>You have larger windows of opportunity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/9101.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong against bursty compositions. </p>
+                        <p>mediocre in most situations as the shield is either too weak or takes too long to generate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/9111.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Extremely useful for fighting </p>
+                        <p>Really strong in teamfights due to the extra health you get on kill</p>
+                        <p>25 gold per takedown adds up to a signifigant amount over the course of the game.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8009.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on mana heavy champions who are not gated by spell cooldowns.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/9104.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on auto based champions who need to be constantly autoing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/9105.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong against heavy CC compositions although the tenacity is usually not significant enough to make a difference for carry champs </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/9103.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong against poke compositions and skirmish compositions due to the ability to heal health back quickly.</p>
+                        <p>Most useful for champs who auto frequently</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8014.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on most roles with the exception of tanks and supports </p>
+                        <p>Useful on champions that can get their target to low health points</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8017.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Great against tanks</p>
+                        <p>really good for champs who can constantly deal damage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8299.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Bad in most situations since if you are on health you are usually not outputting as much damage due to fear of dieing</p>
+                        <p>Hard to utilize.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!– Domination ->
+        <div class="infospace">
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8112.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong with champions that use frequent abilities</p>
+                        <p>Strong laning potiental</p>
+                        <p>Good scaling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8124.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champs that need to get up close and personal to deal damage</p>
+                        <p>Weak laning, mostly for ganking champions</p>
+                        <p>Good for engaging</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8128.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Extremely strong when ahead due to easy of getting souls </p>
+                        <p>Hard to use when behind.</p>
+                        <p>Need to take special attention in lane to get stacks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8126.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong with champs with built in crowd control. </p>
+                        <p>Take this if you have a champ with a guaranteed crowd control. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8139.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong in lane and out of lane </p>
+                        <p>Gives extra laning pressure due to healing capabilities </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8143.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champions with a low cooldown blink, jump or dash.</p>
+                        <p>Only take if you are playing a champion with a low cooldown movement ability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8136.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Makes it extremely easy to control vision around objectives</p>
+                        <p>Can be used as a rune for every role.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8120.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong for invading into enemy jungle and for roaming.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8138.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>General purpose rune thats a good fallback for most midlane champions.</p>
+                        <p>garunteed scaling into lategame.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8135.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong at snowballing games</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8134.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong if and only if you plan to build lots of items with actives </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8105.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Good for roaming carries who want to move around the map</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-Socery->
+        <div class="infospace">
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8214.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong with champions that use frequent abilities</p>
+                        <p>Strong laning potiental</p>
+                        <p>Good scaling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8229.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champs that need to get up close and personal to deal damage</p>
+                        <p>Weak laning, mostly for ganking champions</p>
+                        <p>Good for engaging</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8230.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Extremely strong when ahead due to easy of getting souls </p>
+                        <p>Hard to use when behind.</p>
+                        <p>Need to take special attention in lane to get stacks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8224.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong with champs with built in crowd control. </p>
+                        <p>Take this if you have a champ with a guaranteed crowd control. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8226.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong in lane and out of lane </p>
+                        <p>Gives extra laning pressure due to healing capabilities </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8243.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champions with a low cooldown blink, jump or dash.</p>
+                        <p>Only take if you are playing a champion with a low cooldown movement ability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8210.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Makes it extremely easy to control vision around objectives</p>
+                        <p>Can be used as a rune for every role.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8234.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong for invading into enemy jungle and for roaming.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8233.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>General purpose rune thats a good fallback for most midlane champions.</p>
+                        <p>garunteed scaling into lategame.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8237.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong at snowballing games</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8232.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong if and only if you plan to build lots of items with actives </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8236.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Good for roaming carries who want to move around the map</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-Inspiration->
+        <div class="infospace">
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8326.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong with champions that use frequent abilities</p>
+                        <p>Strong laning potiental</p>
+                        <p>Good scaling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8351.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champs that need to get up close and personal to deal damage</p>
+                        <p>Weak laning, mostly for ganking champions</p>
+                        <p>Good for engaging</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8359.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Extremely strong when ahead due to easy of getting souls </p>
+                        <p>Hard to use when behind.</p>
+                        <p>Need to take special attention in lane to get stacks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8306.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong with champs with built in crowd control. </p>
+                        <p>Take this if you have a champ with a guaranteed crowd control. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8345.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong in lane and out of lane </p>
+                        <p>Gives extra laning pressure due to healing capabilities </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8313.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champions with a low cooldown blink, jump or dash.</p>
+                        <p>Only take if you are playing a champion with a low cooldown movement ability</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8304.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Makes it extremely easy to control vision around objectives</p>
+                        <p>Can be used as a rune for every role.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8321.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong for invading into enemy jungle and for roaming.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8316.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>General purpose rune thats a good fallback for most midlane champions.</p>
+                        <p>garunteed scaling into lategame.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8347.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong at snowballing games</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8410.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong if and only if you plan to build lots of items with actives </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8339.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Good for roaming carries who want to move around the map</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-Resolve->
+        <div class="infospace">
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8437.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong for laners as you get the most opportunities to proc the keystone.</p>
+                        <p>Generally good on tanks as it helps them scale up into the mid and late game.</p>
+                        <p>Good in lane for the sustain.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8439.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong melee champs with crowd control, this keystone is basically useless on ranged champs due to the effect proecing on the players champion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8465.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Good on champions who are in close proximity to other champions for a majority of the match </p>
+                        <p>Better on tanky champions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8242.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong against high crowd control compositions. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8446.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong for snowballing lane by taking first or second tower </p>
+                        <p>Strong during all parts of the game especially when grouped.   </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8463.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champions crowd control</p>
+                        <p>Only take if you are playing a champion with crowd control</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8430.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Currently a worse "conditioning". Becomes less usefull as the game goes on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8435.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Currently a worse "conditioning". Becomes less usefull as the game goes on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8429.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong for both mid and late game. The 5% bonus is unnoticeable until late game.</p>
+                        <p>guaranteed scaling into lategame.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8451.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Guaranteed lategame scaling</p>
+                        <p>Extremely useful on tanks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8453.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong on champions with self heals </p>
+                    </div>
+                </div>
+            </div>
+            <div class="runeinfo">
+                <div class="runeicon">
+                    <img src="./Icons/Runes/8444.png" width=90px height=90px align="center">
+                </div>
+                <div class="infospace">
+                    <div class ="text">
+                        <p>Strong laning rune</p>
+                        <p>Strong in teamfights </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class = fixed-bottom>
+        <div class="footers fixed-bottom-banner"></div>
+    </footer>
+</body>
+</html>
