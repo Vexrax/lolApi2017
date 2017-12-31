@@ -85,6 +85,15 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
             case 21:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerBarrier.png";
                 break;
+            case 30:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroRecall.png";
+                break;
+            case 31:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroThrow.png";
+                break;
+            case 32:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSnowball.png";
+                break;
             case 39:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSnowball.png";
                 break;
@@ -124,11 +133,23 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
             case 12:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerTeleport.png";
                 break;
+            case 13:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerMana.png";
+                break;
             case 14:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerDot.png";
                 break;
             case 21:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerBarrier.png";
+                break;
+            case 30:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroRecall.png";
+                break;
+            case 31:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroThrow.png";
+                break;
+            case 32:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSnowball.png";
                 break;
             case 39:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSnowball.png";
