@@ -408,6 +408,60 @@ Profile Page
     background: #78c4ec;
 
 }
+.content>.runesspace
+{
+    display: none;
+    width: 50%;
+    min-width: 1000px;
+    height: 400px;
+    text-align: center;
+    background-color: #171a20;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    visibility: hidden;
+
+}
+.content>.runesspace>.subbox
+{
+    display: inline-block;
+    width: 45%;
+    min-width: 400px;
+    height: 100%;
+    text-align: left;
+    font-family: 'economica','sans-serif';
+    color: white;
+}
+.content>.runesspace>.subbox>.matchruneskeystone
+{
+    width:195px;
+    height: 285px;
+    display: inline-block;
+}
+.content>.runesspace>.subbox>.Secondary
+{
+    border-color: white;
+    width:195px;
+    height: 225px;
+    display: inline-block;
+
+}
+.content>.runesspace>.subbox>.matchruneskeystone>.keystone
+{
+    width:54px;
+    height: 58px;
+    display: inline-block;
+
+
+}
+.content>.runesspace>.subbox>.Secondary>.keystone
+{
+    width:54px;
+    height: 58px;
+    display: inline-block;
+
+
+}
+
 .deadspacebottom
 {
     width: 100%;
@@ -415,7 +469,6 @@ Profile Page
     margin-top: 80px;
     vertical-align: top;
     position: relative;
-
 }
 /*
  * A better looking default horizontal rule
