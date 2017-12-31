@@ -45,24 +45,24 @@
     </div>
     <div class="DefaultSpaceRuneHelp">
         <div class="TreeSelection">
-            <button class="Tree" id="button0">
-                <img src="./Icons/Runes/8000.png" width=100px height=100px>
+            <button class="Tree" id="button0" onclick="onpress(this.id)">
+                <img src="./Icons/Runes/8000.png" width=80px height=80px>
             </button>
-            <button class="Tree" id="button1">
-                <img src="./Icons/Runes/8100.png" width=100px height=100px>
+            <button class="Tree" id="button1" onclick="onpress(this.id)">
+                <img src="./Icons/Runes/8100.png" width=80px height=80px>
             </button>
-            <button class="Tree" id="button2">
-                <img src="./Icons/Runes/8200.png" width=100px height=100px>
+            <button class="Tree" id="button2" onclick="onpress(this.id)">
+                <img src="./Icons/Runes/8200.png" width=80px height=80px>
             </button>
-            <button class="Tree" id="button3">
-                <img src="./Icons/Runes/8300.png" width=100px height=100px>
+            <button class="Tree" id="button3" onclick="onpress(this.id)">
+                <img src="./Icons/Runes/8300.png" width=80px height=80px>
             </button>
-            <button class="Tree" id="button4">
-                <img src="./Icons/Runes/8400.png" width=100px height=100px>
+            <button class="Tree" id="button4" onclick="onpress(this.id)">
+                <img src="./Icons/Runes/8400.png" width=80px height=80px>
             </button>
         </div>
         <!– Precision ->
-        <div class="infospace">
+        <div class="infospace1" id="Precision">
             <div class="runeinfo">
                 <div class="runeicon">
                     <img src="./Icons/Runes/8005.png" width=90px height=90px align="center">
@@ -200,7 +200,7 @@
             </div>
         </div>
         <!– Domination ->
-        <div class="infospace">
+        <div class="infospace1" id ="Domination">
             <div class="runeinfo">
                 <div class="runeicon">
                     <img src="./Icons/Runes/8112.png" width=90px height=90px align="center">
@@ -336,16 +336,16 @@
             </div>
         </div>
         <!-Socery->
-        <div class="infospace">
+        <div class="infospace1" id="Socery">
             <div class="runeinfo">
                 <div class="runeicon">
                     <img src="./Icons/Runes/8214.png" width=90px height=90px align="center">
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong with champions that use frequent abilities</p>
-                        <p>Strong laning potiental</p>
-                        <p>Good scaling</p>
+                        <p>Especially good if your champion can both poke and shield as you can get full usage out of this rune</p>
+                        <p>Especially good if your champion can both poke and shield as you can get full usage out of this rune</p>
+                        <p>Compared to Arcane Comet, Aery will come up more often in lane, try and use this to your advantage against Comet users</p>
                     </div>
                 </div>
             </div>
@@ -355,9 +355,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong on champs that need to get up close and personal to deal damage</p>
-                        <p>Weak laning, mostly for ganking champions</p>
-                        <p>Good for engaging</p>
+                        <p>Arcane Comet works well on poke champions that can easily proc it. Try and pair it with some cc to ensure that it hits.</p>
+                        <p>Arcane Comet can be dodged by walking out of it, or using any movement abilities.</p>
+                        <p>The cooldown is reduced for spells you hit on enemy champions. However this can only occur every 0.5 seconds.</p>
                     </div>
                 </div>
             </div>
@@ -367,9 +367,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Extremely strong when ahead due to easy of getting souls </p>
-                        <p>Hard to use when behind.</p>
-                        <p>Need to take special attention in lane to get stacks.</p>
+                        <p>Typically used on short range spell casters. This is because such casters are generally quite close to large threats, so having the extra movement speed can help them avoid death.</p>
+                        <p>This rune requires three spells to proc, so before taking it think about if your champion can use this rune. An example is Vladimir; he is a short range caster that would benefit from the movement speed, however he can not proc this rune without his Ultimate. </p>
                     </div>
                 </div>
             </div>
@@ -379,8 +378,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong with champs with built in crowd control. </p>
-                        <p>Take this if you have a champ with a guaranteed crowd control. </p>
+                        <p>Good to take in lane when against an AP threat. This will alleviate some kill pressure that AP assassins have early game. </p>
+                        <p>The cooldown is moderately long at one minute so be sure to play around its cooldown as have the shield can sway fights.</p>
                     </div>
                 </div>
             </div>
@@ -390,8 +389,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong in lane and out of lane </p>
-                        <p>Gives extra laning pressure due to healing capabilities </p>
+                        <p>With it both giving a free spell and restoring missing resources Manaflow Band is very strong on many spell users that typically have mana problems. </p>
+                        <p>Does not restore flow. Do not take on Yasuo. </p>
                     </div>
                 </div>
             </div>
@@ -401,8 +400,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong on champions with a low cooldown blink, jump or dash.</p>
-                        <p>Only take if you are playing a champion with a low cooldown movement ability</p>
+                        <p>Best used on champions that are very Ultimate dependent and/or use their Ultimate a lot. Some examples are Corki and Kassadin.</p>
+                        <p>-	This stacks multiplicatively with CDR so with more CDR this rune has less flat value. It will likely only remove a few seconds off an ultimate, so only take this on champions where that few seconds counts</p>
                     </div>
                 </div>
             </div>
@@ -412,8 +411,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Makes it extremely easy to control vision around objectives</p>
-                        <p>Can be used as a rune for every role.</p>
+                        <p>Best on champions where early CDR is required.</p>
+                        <p>This rune also makes it less punishing to build more than 40% CDR so if your planned build might take you to over 40% this rune would likely be a strong choice.</p>
                     </div>
                 </div>
             </div>
@@ -423,7 +422,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong for invading into enemy jungle and for roaming.</p>
+                        <p>Best taken on champions that have some movement speed enhancer in their kits. Some examples are Hecarim and Olaf</p>
+                        <p>This rune can also be taken on champions which gain movement speed through items. Some items that do are Zeal items, Yoummu’s Ghostblade, and Luden’s Echo.</p>
                     </div>
                 </div>
             </div>
@@ -433,8 +433,7 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>General purpose rune thats a good fallback for most midlane champions.</p>
-                        <p>garunteed scaling into lategame.</p>
+                        <p>This rune requires you to be above 70% health to be effective, so before taking it see if the enemy team has any champions that can easily poke you down to below 70%.</p>
                     </div>
                 </div>
             </div>
@@ -444,8 +443,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong at snowballing games</p>
-
+                        <p>This deals level scaling damage however there is no AD or AP scaling making this rune much stronger early than late.</p>
+                        <p>The cooldown is 20 seconds so try and trade only with Scorch up.</p>
+                        <p>Try and determine if your opponent is also running Scorch. If not you can likely win short trades in lane. </p>
                     </div>
                 </div>
             </div>
@@ -455,7 +455,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong if and only if you plan to build lots of items with actives </p>
+                        <p>This is best to take on champions that require roaming to be useful. </p>
+                        <p>If you plan on roaming a lot this rune can be helpful to get back in lane faster.</p>
+                        <p>This would be best on a roaming supports who spend a lot of time in the river, and the extra movement speed allows them to quickly support mid and bot.</p>
                     </div>
                 </div>
             </div>
@@ -465,23 +467,23 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Good for roaming carries who want to move around the map</p>
-
+                        <p>This bonus scales up as the game progresses so before taking this rune look at team compositions and try to determine if the game will be a long one.</p>
+                        <p>If you are taking Gathering Storm a wave-clear champion works well to help stall the game out</p>
+                        <p>The bonuses are only changed every 10 minutes giving you a mini power-spike whenever they come. </p>
                     </div>
                 </div>
             </div>
         </div>
         <!-Inspiration->
-        <div class="infospace">
+        <div class="infospace1" id="Inspiration">
             <div class="runeinfo">
                 <div class="runeicon">
                     <img src="./Icons/Runes/8326.png" width=90px height=90px align="center">
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong with champions that use frequent abilities</p>
-                        <p>Strong laning potiental</p>
-                        <p>Good scaling</p>
+                        <p>Useful if your champions kit can be greatly enhanced by different summoner spells at different points of the game.</p>
+                        <p>An example is Malzahar who might want Teleport in lane however once out of lane would want Ghost to help get close to enemies to use his Ultimate. </p>
                     </div>
                 </div>
             </div>
@@ -491,9 +493,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong on champs that need to get up close and personal to deal damage</p>
-                        <p>Weak laning, mostly for ganking champions</p>
-                        <p>Good for engaging</p>
+                        <p>This rune is best on champions that need to able to stick to champions to deal damage. This is mainly melee auto-attackers. However, if you are a melee auto-attacker, also be sure to look at the prevision tree.</p>
+                        <p>Any slowing effect on an item will proc a Freeze-Ray allowing you to chase down fleeing enemies easily. Some of these are Randuin’s Omen and Blade of the Ruined King</p>
                     </div>
                 </div>
             </div>
@@ -503,9 +504,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Extremely strong when ahead due to easy of getting souls </p>
-                        <p>Hard to use when behind.</p>
-                        <p>Need to take special attention in lane to get stacks.</p>
+                        <p>This rune is best on champions that can proc on-hit effects on an enemy champion from a range and/or consistently.  </p>
+                        <p>As this rune drops items into your inventory be sure to regularly check your items to see if anything useful dropped.</p>
+                        <p>The Sacks of Gold sell for 65 but average 75 gold so be sure to use them instead of selling</p>
                     </div>
                 </div>
             </div>
@@ -515,8 +516,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong with champs with built in crowd control. </p>
-                        <p>Take this if you have a champ with a guaranteed crowd control. </p>
+                        <p>Best used on champions that are extremely dependent on flash for a good engage. An example is Alistar. </p>
+                        <p>The rune should can also be used for creative pathing. Try and go over walls your opponents would not expect while you have flashtrapion.</p>
+                        <p>Be aware of when your flash comes back up so you don’t accidently flash when you meant to HexFlash. </p>
                     </div>
                 </div>
             </div>
@@ -526,8 +528,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong in lane and out of lane </p>
-                        <p>Gives extra laning pressure due to healing capabilities </p>
+                        <p>This rune restores based on missing HP and Mana. If you have biscuits you can try trading more with your opponent. </p>
+                        <p>Over the course of 4 biscuits you will have mana increased by 160. This can be useful on low-mana pool champs that also don’t build mana items </p>
+                        <p>This rune also helps champions with poorer laning phases sustain in lane</p>
                     </div>
                 </div>
             </div>
@@ -537,8 +540,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong on champions with a low cooldown blink, jump or dash.</p>
-                        <p>Only take if you are playing a champion with a low cooldown movement ability</p>
+                        <p>This rune is very useful when facing champions that have a lot of kill and dive pressure. After 6 min you can likely stop one of their dives with the stopwatch</p>
+                        <p>This rune reduces the cooldowns of the items it builds into by 15%. If you are planning on building any of them this rune might be good if you are already in the Inspiration tree</p>
                     </div>
                 </div>
             </div>
@@ -548,8 +551,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Makes it extremely easy to control vision around objectives</p>
-                        <p>Can be used as a rune for every role.</p>
+                        <p>This rune gives free boots and 50g less on upgrade giving a good 350g value. It also gives an extra 10 movespeed so if you don’t need early boots this is a good rune</p>
+                        <p>However, in many matchups, such as melee vs ranged or one with many skill-shots be sure to avoid taking this rune so you can buy early boots. </p>
                     </div>
                 </div>
             </div>
@@ -559,7 +562,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong for invading into enemy jungle and for roaming.</p>
+                        <p>This rune can help champions buy items earlier than they would normally. This is especially important on champions that have large and important power spikes.</p>
+                        <p>Remember, every time you enter debt after the first there is a 50g penalty applied. Doing this consistently can cause you to lose a lot of gold. </p>
                     </div>
                 </div>
             </div>
@@ -569,8 +573,7 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>General purpose rune thats a good fallback for most midlane champions.</p>
-                        <p>garunteed scaling into lategame.</p>
+                        <p>Dont take this.</p>
                     </div>
                 </div>
             </div>
@@ -580,8 +583,8 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong at snowballing games</p>
-
+                        <p>This rune is best used on champions that need CDR on their abilities. Especially on champions with longer cooldowns the extra 5% CDR is helpful</p>
+                        <p>Taking this rune along with Unsealed Spellbook may be useful to help you get the most out of your summoner spells</p>
                     </div>
                 </div>
             </div>
@@ -591,7 +594,9 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Strong if and only if you plan to build lots of items with actives </p>
+                        <p>Best to take when playing a champion the requires staying close to deal damage.</p>
+                        <p>Champions that are able to inflict constant CC or at least CC fairly often would better use this rune</p>
+                        <p>A good user example could be Olaf, as he is able to proc CC repeatedly with his Throwing Axe when chasing down enemies. </p>
                     </div>
                 </div>
             </div>
@@ -601,14 +606,15 @@
                 </div>
                 <div class="infospace">
                     <div class ="text">
-                        <p>Good for roaming carries who want to move around the map</p>
+                        <p>Best taken on champions that would like tank stats and also do not need to deal damage.</p>
+                        <p>Just be aware, you are giving up significant damage early to take this rune, so you likely can’t fight or kill much early.  </p>
 
                     </div>
                 </div>
             </div>
         </div>
         <!-Resolve->
-        <div class="infospace">
+        <div class="infospace1" id="Resolve">
             <div class="runeinfo">
                 <div class="runeicon">
                     <img src="./Icons/Runes/8437.png" width=90px height=90px align="center">
@@ -740,9 +746,11 @@
         </div>
     </div>
 
-
+    <div class="deadspacebottom"></div>
     <footer class = fixed-bottom>
         <div class="footers fixed-bottom-banner"></div>
     </footer>
+
 </body>
+<script src="webjs/Insights.js"></script>
 </html>
