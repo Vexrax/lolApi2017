@@ -12,7 +12,7 @@ var riot = new riotAPI(process.env.RIOT_KEY);
 var mySQL = require('./mySQL');
 var sql = new mySQL();
 var analysis = new analysisEngine(riot);
-analysis.setUp();//set it up bois
+//analysis.setUp();//set it up bois
 var bodyParser = require('body-parser');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -91,7 +91,8 @@ function getMatchHistory(name, socketId) {
             
             idListToNameList(runesList[2], function(champNameList) {
                 analysis.summonerAnalysis(list, runesList[1], runesList[0], function(nRuneList, nPaths) {
-                    io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], nRuneList, champNameList);                    
+                    var runePath = analysis.getRuneTrees(runesList[0]);
+                    io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], runePath, nRuneList, nPaths, champNameList, analysis.getRuneTree());                    
                 });
                                 
             });
