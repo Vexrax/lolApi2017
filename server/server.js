@@ -21,11 +21,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static(path.join(__dirname, '/../')));
 
 app.get('/', function(req, res){
-    res.sendFile(path.join("index.html"));
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/index.html"));
 });
 
 app.get('/:region/:name?', function(req, res){
-    res.sendFile(path.join("SummonerPage.html"));
+    res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
 
 });
 //homePage Button
@@ -79,7 +79,7 @@ io.on('connection', function(socket) {
 
 
 
-http.listen(3000, function(){
+http.listen(process.env.PORT || 3000, function(){
     console.log('listening on localhost:3000');
 });
 
