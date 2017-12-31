@@ -30,8 +30,8 @@ app.get('/:region/:name?', function(req, res){
 });
 //homePage Button
 app.post('/:region/:name?', function(req, res){
-    res.redirect('http:///99.247.49.193:3000/');            
-    
+    res.redirect('https://runicinsight.herokuapp.com/');
+
 });
 
 app.get('/test', function(req, res){
@@ -47,7 +47,7 @@ app.post('/', urlencodedParser, function (req, res) {
     riot.nameToProfile(req.body.name, function(profile) {
         riot.changeRegion(req.body.region);
         if(profile.name) {
-            res.redirect('http:///99.247.49.193:3000/' + req.body.region + '/' + profile.name);            
+            res.redirect('https://runicinsight.herokuapp.com/' + req.body.region + '/' + profile.name);
         }
         else {
             console.log("No Summoner Found");
@@ -66,7 +66,7 @@ io.on('connection', function(socket) {
     });
     var name = socket.handshake.headers.referer.split("/");
     name = name[name.length - 1];
-    //io.emit('modifyHTML', name);        
+    //io.emit('modifyHTML', name);
     io.to(socket.id).emit('modifyHTML', name);
     //use this socket to get match history
     socket.on('getMatchHistory', function() {
@@ -79,7 +79,7 @@ io.on('connection', function(socket) {
 
 
 
-http.listen(3000, function(){
+http.listen(process.env.PORT || 3000, function(){
     console.log('listening on localhost:3000');
 });
 
@@ -87,19 +87,19 @@ http.listen(3000, function(){
 //functions
 function getMatchHistory(name, socketId) {
     console.log("gettingHistory");
-    
+
     riot.getRecentGamesByName(name, function(list, account) {
         if(list == "error") console.log("No games played");
         else {
             var runesList = getRunesForGames(list, account.accountId);
             var reccList;
-            
+
             idListToNameList(runesList[2], function(champNameList) {
                 analysis.summonerAnalysis(list, runesList[1], runesList[0], function(nRuneList, nPaths) {
                     var runePath = analysis.getRuneTrees(runesList[0]);
-                    io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], runePath, nRuneList, nPaths, champNameList, analysis.getRuneTree());                    
+                    io.to(socketId).emit("matchHistory", account, list, runesList[1], runesList[0], runePath, nRuneList, nPaths, champNameList, analysis.getRuneTree());
                 });
-                                
+
             });
             //runesList[1] is the list of participant ids
         }
@@ -144,7 +144,7 @@ function idListToNameList(idList, callback) {
     //console.log(idList);
     var champList = [];
     file = JSON.parse(fs.readFileSync(__dirname + "//champions.json", "utf8"))
-        
+
     var data = file.data
     for(var i in idList) {
         for(var t in data) {
