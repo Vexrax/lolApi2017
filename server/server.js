@@ -3,7 +3,7 @@ envs.config();
 const express = require('express');
 var path = require('path');
 var fs = require('fs');
-var app = require('express')();
+var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var analysisEngine = require('./analysisEngine');
@@ -14,6 +14,7 @@ var sql = new mySQL();
 var analysis = new analysisEngine(riot);
 //analysis.setUp();//set it up bois
 var bodyParser = require('body-parser');
+
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -36,14 +37,13 @@ app.get('/test', function(req, res){
 app.get('/:region', function(req, res){
     res.sendFile(path.join(__dirname + "/../../lolApi2017/404.html"));
     console.log("Serving 404");
-
 });
 
 app.post('/', urlencodedParser, function (req, res) {
     riot.nameToProfile(req.body.name, function(profile) {
         riot.changeRegion(req.body.region);
         if(profile.name) {
-            res.redirect('http://localhost:3000/' + req.body.region + '/' + profile.name);            
+            res.redirect('http:///99.247.49.193:3000/' + req.body.region + '/' + profile.name);            
         }
         else {
             console.log("No Summoner Found");
@@ -76,7 +76,7 @@ io.on('connection', function(socket) {
 
 
 http.listen(3000, function(){
-    console.log('listening on localHost:3000');
+    console.log('listening on localhost:3000');
 });
 
 

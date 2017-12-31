@@ -7,14 +7,20 @@ var currentRunesListG, currentRuneTreesG, advisedRunesListG, advisedRuneTreesG, 
 //
 socket.emit("getMatchHistory");
 socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunesList, currentRuneTrees, advisedRunesList, advisedRuneTrees, champList, runeTree) {
-    document.getElementById("playerscontent0").style.visibility = 'visible';
+    /*document.getElementById("playerscontent0").style.visibility = 'visible';
     document.getElementById("playerscontent1").style.visibility = 'visible';
     document.getElementById("playerscontent2").style.visibility = 'visible';
     document.getElementById("playerscontent3").style.visibility = 'visible';
     document.getElementById("playerscontent4").style.visibility = 'visible';
     document.getElementById("playerscontent5").style.visibility = 'visible';
     document.getElementById("playerscontent6").style.visibility = 'visible';
-    document.getElementById("playerscontent7").style.visibility = 'visible';
+    document.getElementById("playerscontent7").style.visibility = 'visible';*/
+    for(var i = 0; i < 8; i ++) {
+        document.getElementById("KDAcontent" + i + "-1").style.visibility = 'visible';
+        document.getElementById("button" + i).style.visibility = 'visible';
+        document.getElementById("playerscontent" + i).style.visibility = 'visible';        
+    }
+    
     //assign to globals
     currentRunesListG = currentRunesList;
     currentRuneTreesG = currentRuneTrees;
