@@ -120,4 +120,21 @@ riot.prototype.recentGameLoop = function(dataList, gameList, index, callback) {
     
 }
 
+riot.prototype.changeRegion = function(region) {
+    if(region == "BR") this.host = "https://br1.api.riotgames.com";
+    else if(region == "EUNE") this.host = "https://eun1.api.riotgames.com";
+    else if(region == "EUW") this.host = "https://euw1.api.riotgames.com";
+    else if(region == "JP") this.host = "https://jp1.api.riotgames.com";
+    else if(region == "KR") this.host = "https://kr.api.riotgames.com";
+    else if(region == "LAN") this.host = "https://la1.api.riotgames.com";
+    else if(region == "LAS") this.host = "https://la2.api.riotgames.com";
+    else if(region == "NA") this.host = "https://na1.api.riotgames.com";
+    else if(region == "OCE") this.host = "https://oc1.api.riotgames.com";
+    else if(region == "TR") this.host = "https://tr1.api.riotgames.com";
+    else if(region == "RU") this.host = "https://ru.api.riotgames.com";
+    else if(region == "PBE") this.host = "https://pbe1.api.riotgames.com";
+    
+    
+    
+}
 module.exports = riot;

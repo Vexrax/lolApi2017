@@ -243,8 +243,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                     break;
                 }
                 if(i == advisedRunesList[l].length - 1){
-                    document.getElementById("suggestedkeystone" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";
-                    
+                    document.getElementById("suggestedkeystone" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";   
                 }
             }
         }

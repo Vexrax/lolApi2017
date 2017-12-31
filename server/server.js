@@ -41,6 +41,7 @@ app.get('/:region', function(req, res){
 
 app.post('/', urlencodedParser, function (req, res) {
     riot.nameToProfile(req.body.name, function(profile) {
+        riot.changeRegion(req.body.region);
         if(profile.name) {
             res.redirect('http://localhost:3000/' + req.body.region + '/' + profile.name);            
         }
@@ -145,8 +146,14 @@ function idListToNameList(idList, callback) {
         for(var t in data) {
             //console.log(data[t].id);
             if(idList[i] == data[t].id) {
-                //console.log(data[t].name);                    
-                champList.push(data[t].name.replace(/\s/g, ''));
+                //console.log(data[t].name);
+                var newName =  data[t].name.replace(/\s/g, '');
+                if(newName.includes("'")) {
+                    newName = newName.replace("'", "");
+                    newName = newName.toLowerCase();
+                    newName = newName.charAt(0).toUpperCase() + newName.slice(1);
+                }
+                champList.push(newName);
             }
         }
     }

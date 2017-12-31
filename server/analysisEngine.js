@@ -19,11 +19,11 @@ function analysisEngine(riotApi) {
   [ [ 8437, 8439, 8465 ],
     [ 8242, 8446, 8463 ],
     [ 8430, 8435, 8429 ],
-    [ 9101, 8453, 8444 ] ],
+    [ 8451, 8453, 8444 ] ],
   [ [ 8326, 8351, 8359 ],
     [ 8306, 8345, 8313 ],
     [ 8304, 8321, 8316 ],
-    [ 9111, 8410, 8347 ] ] ];
+    [ 8347, 8410, 8339 ] ] ];
     this.minGames = 50;
 }
 analysisEngine.prototype.summonerAnalysis = function(gameList, idList, runeList, callback) {
