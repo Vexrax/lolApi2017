@@ -635,10 +635,12 @@ hr
 .homebutton
 {
     position: relative;
-    width: 120px;
+    width: 8%;
     height: 103%;
     background: #771e29;
     outline: transparent;
     border: transparent;
-    margin-right: 680px;
+}
+.homebutton:hover {
+    cursor: pointer;    
 }
