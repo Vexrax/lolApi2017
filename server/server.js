@@ -21,11 +21,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.use(express.static(path.join(__dirname, '/../')));
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../index.html"));
+    res.sendFile(path.join("index.html"));
 });
 
 app.get('/:region/:name?', function(req, res){
-    res.sendFile(path.join(__dirname + "/../../SummonerPage.html"));
+    res.sendFile(path.join("SummonerPage.html"));
 
 });
 //homePage Button
