@@ -18,9 +18,9 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     for(var i = 0; i < 8; i ++) {
         document.getElementById("KDAcontent" + i + "-1").style.visibility = 'visible';
         document.getElementById("button" + i).style.visibility = 'visible';
-        document.getElementById("playerscontent" + i).style.visibility = 'visible';        
+        document.getElementById("playerscontent" + i).style.visibility = 'visible';
     }
-    
+
     //assign to globals
     currentRunesListG = currentRunesList;
     currentRuneTreesG = currentRuneTrees;
@@ -45,7 +45,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         {
             break;
         }
-        document.getElementById(id).src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/" + champList[i] + ".png";
+        document.getElementById(id).src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/" + champList[i] + ".png";
         id = "matchcontent" + i;
         document.getElementById(id).style.backgroundImage = "url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + champList[i] + "_0.jpg')";
         //console.log(id);
@@ -62,28 +62,28 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         switch(sumswitch)
         {
             case 1:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerBoost.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerBoost.png";
                 break;
             case 3:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerExhaust.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerExhaust.png";
                 break;
             case 4:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerFlash.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerFlash.png";
                 break;
             case 7:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerHeal.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerHeal.png";
                 break;
             case 11:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerSmite.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSmite.png";
                 break;
             case 12:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerTeleport.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerTeleport.png";
                 break;
             case 14:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerDot.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerDot.png";
                 break;
             case 21:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerBarrier.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerBarrier.png";
                 break;
             case 30:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroRecall.png";
@@ -92,10 +92,10 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroThrow.png";
                 break;
             case 39:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerSnowball.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSnowball.png";
                 break;
             default:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerFlash.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerFlash.png";
                 break;
         }
         id = "champcontent" + j +"-4";
@@ -113,28 +113,28 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         switch(sumswitch)
         {
             case 1:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerBoost.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerBoost.png";
                 break;
             case 3:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerExhaust.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerExhaust.png";
                 break;
             case 4:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerFlash.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerFlash.png";
                 break;
             case 7:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerHeal.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerHeal.png";
                 break;
             case 11:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerSmite.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSmite.png";
                 break;
             case 12:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerTeleport.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerTeleport.png";
                 break;
             case 14:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerDot.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerDot.png";
                 break;
             case 21:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerBarrier.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerBarrier.png";
                 break;
             case 30:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroRecall.png";
@@ -143,10 +143,10 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroThrow.png";
                 break;
             case 39:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerSnowball.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerSnowball.png";
                 break;
             default:
-                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerFlash.png";
+                sumID = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/spell/SummonerFlash.png";
                 break;
         }
         id = "champcontent" + k +"-3";
@@ -160,19 +160,19 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
             break;
         }
         if(!gamesList[m].participants[idList[m] - 1].stats.item0 == 0)
-            document.getElementById("itemscontent" + m  + "-1").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item0 +".png";
+            document.getElementById("itemscontent" + m  + "-1").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item0 +".png";
         if(!gamesList[m].participants[idList[m] - 1].stats.item1 == 0)
-            document.getElementById("itemscontent" + m  + "-2").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item1 +".png";
+            document.getElementById("itemscontent" + m  + "-2").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item1 +".png";
         if(!gamesList[m].participants[idList[m] - 1].stats.item2 == 0)
-            document.getElementById("itemscontent" + m  + "-3").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item2 +".png";
+            document.getElementById("itemscontent" + m  + "-3").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item2 +".png";
         if(!gamesList[m].participants[idList[m] - 1].stats.item6 == 0)
-            document.getElementById("itemscontent" + m  + "-4").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item6 +".png"; //this element is trinket slot
+            document.getElementById("itemscontent" + m  + "-4").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item6 +".png"; //this element is trinket slot
         if(!gamesList[m].participants[idList[m] - 1].stats.item3 == 0)
-            document.getElementById("itemscontent" + m  + "-5").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item3 +".png";
+            document.getElementById("itemscontent" + m  + "-5").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item3 +".png";
         if(!gamesList[m].participants[idList[m] - 1].stats.item4 == 0)
-            document.getElementById("itemscontent" + m  + "-6").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item4 +".png";
+            document.getElementById("itemscontent" + m  + "-6").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item4 +".png";
         if(!gamesList[m].participants[idList[m] - 1].stats.item5 == 0)
-            document.getElementById("itemscontent" + m  + "-7").src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item5 +".png";
+            document.getElementById("itemscontent" + m  + "-7").src = "http://ddragon.leagueoflegends.com/cdn/7.24.2/img/item/" + gamesList[m].participants[idList[m] - 1].stats.item5 +".png";
         //console.log(gamesList[m].participants[idList[m] - 1].stats.item6 +".png")
     }
     for(var z in gamesList)
@@ -209,7 +209,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         document.getElementById(id).src = "/Icons/Runes/" + pathIdToPicId(primaryTree) + ".png";
         id = "matchSecondary" + l + "-0";
         document.getElementById(id).src = "/Icons/Runes/" + pathIdToPicId(secondaryTree) + ".png";
-              
+
         //set primary tree runes
         for(var keyIndex = 1; keyIndex <= 12; keyIndex ++) {
             for(var i in currentRunesList[l]) {
@@ -220,7 +220,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 }
                 if(i == currentRunesList[l].length - 1){
                     document.getElementById("matchrunekeystone" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";
-                    
+
                 }
             }
         }
@@ -234,7 +234,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 }
                 if(i == currentRunesList[l].length - 1){
                     document.getElementById("matchSecondary" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";
-                    
+
                 }
             }
         }
@@ -249,9 +249,9 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         primaryTree = advisedRuneTrees[l][0];
         secondaryTree = advisedRuneTrees[l][1];
         id = "suggestedkeystone" + l + "-0";
-        document.getElementById(id).src = "/Icons/Runes/" + pathIdToPicId(primaryTree) + ".png"; 
+        document.getElementById(id).src = "/Icons/Runes/" + pathIdToPicId(primaryTree) + ".png";
         id = "suggestedSecondary" + l + "-0";
-        document.getElementById(id).src = "/Icons/Runes/" + pathIdToPicId(secondaryTree) + ".png"; 
+        document.getElementById(id).src = "/Icons/Runes/" + pathIdToPicId(secondaryTree) + ".png";
         //set primary tree runes
         for(var keyIndex = 1; keyIndex <= 12; keyIndex ++) {
             for(var i in advisedRunesList[l]) {
@@ -261,7 +261,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                     break;
                 }
                 if(i == advisedRunesList[l].length - 1){
-                    document.getElementById("suggestedkeystone" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";   
+                    document.getElementById("suggestedkeystone" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";
                 }
             }
         }
@@ -275,7 +275,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 }
                 if(i == advisedRunesList[l].length - 1){
                     document.getElementById("suggestedSecondary" + l + "-" + keyIndex).src = "/Icons/Runes/" + curRune + "-1.png";
-                    
+
                 }
             }
         }
@@ -304,15 +304,15 @@ function myFunction(id) {
     console.log(id);
     var gameNum = id.substring(6, 7);
     if(document.getElementById("runesspace" + gameNum).style.display != "inline-block") {
-        document.getElementById("runesspace" + gameNum).style.display = "inline-block"; 
+        document.getElementById("runesspace" + gameNum).style.display = "inline-block";
         document.getElementById("runesspace" + gameNum).style.visibility = 'visible';
         document.getElementById(id).style.backgroundImage = "/Icons/up-arrow.png";
     }
     else {
-        document.getElementById("runesspace" + gameNum).style.display = "none"; 
+        document.getElementById("runesspace" + gameNum).style.display = "none";
         document.getElementById("runesspace" + gameNum).style.visibility = 'hidden';
         document.getElementById(id).style.backgroundImage = "/Icons/down-arrow.png";
-        
+
     }
 }
 
