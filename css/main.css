@@ -539,18 +539,19 @@ RuneHelp Classes
     background-color: transparent;
     border: transparent;
 }
-.infospace
+.infospace1
 {
-    width: 100%;
+    width: 65%;
+    min-width: 65%;
     height: 2400px;
     text-align: center;
-    position: relative;
+    position: center;
     visibility: hidden;
     display: none;
 
 
 }
-.infospace>.runeinfo
+.infospace1>.runeinfo
 {
     width: 50%;
     min-width: 1200px;
@@ -558,7 +559,7 @@ RuneHelp Classes
     text-align: center;
     background-color: #171a20;
 }
-.infospace>.runeinfo>.runeicon
+.infospace1>.runeinfo>.runeicon
 {
     width: 120px;
     height: 120px;
@@ -569,7 +570,7 @@ RuneHelp Classes
     margin-right: 35px;
     text-align: center;
 }
-.infospace>.runeinfo>.infospace
+.infospace1>.runeinfo>.infospace
 {
     width: 900px;
     height: 150px;
@@ -577,7 +578,7 @@ RuneHelp Classes
     background: #0a0b11;
     margin-top: 25px;
 }
-.infospace>.runeinfo>.infospace>.text
+.infospace1>.runeinfo>.infospace>.text
 {
     width: 890px;
     height: 130px;
