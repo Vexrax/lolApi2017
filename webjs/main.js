@@ -85,6 +85,12 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
             case 21:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerBarrier.png";
                 break;
+            case 30:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroRecall.png";
+                break;
+            case 31:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroThrow.png";
+                break;
             case 39:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerSnowball.png";
                 break;
@@ -129,6 +135,12 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 break;
             case 21:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerBarrier.png";
+                break;
+            case 30:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroRecall.png";
+                break;
+            case 31:
+                sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerPoroThrow.png";
                 break;
             case 39:
                 sumID = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerSnowball.png";

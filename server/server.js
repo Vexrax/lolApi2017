@@ -153,6 +153,9 @@ function idListToNameList(idList, callback) {
                     newName = newName.toLowerCase();
                     newName = newName.charAt(0).toUpperCase() + newName.slice(1);
                 }
+                if(newName == "Wukong") {
+                    newName = "MonkeyKing";
+                }
                 champList.push(newName);
             }
         }
