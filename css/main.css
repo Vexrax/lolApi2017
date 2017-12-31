@@ -312,6 +312,7 @@ Profile Page
     color: rgb(173, 173, 173);
     background-color: #0a0b11;
     border-radius: 9px;
+    visibility: hidden;
 }
 .content>.matchContent>.items
 {
@@ -351,6 +352,7 @@ Profile Page
     width: 33.5%;
     height: 100px;
     vertical-align: top;
+    visibility: hidden;
 }
 .content>.matchContent>.players>.red
 {
@@ -414,6 +416,7 @@ Profile Page
     background-color: transparent;
     background-image: url('/Icons/down-arrow.png');
     background-size: 40px 40px;
+    visibility: hidden;
 }
 #runesbutton
 {
