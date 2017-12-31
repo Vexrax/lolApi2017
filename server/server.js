@@ -145,7 +145,7 @@ function idListToNameList(idList, callback) {
     var champList = [];
     file = JSON.parse(fs.readFileSync(__dirname + "//champions.json", "utf8"))
 
-    var data = file.data
+    var data = file.data;
     for(var i in idList) {
         for(var t in data) {
             //console.log(data[t].id);
@@ -163,6 +163,9 @@ function idListToNameList(idList, callback) {
                 if(newName == "Kogmaw") {
                     //riot pls. Why is this one inconsistant with the rest of x'y characters?
                     newName = "KogMaw";
+                }
+                if(newName == "Reksai") {
+                    newName = "RekSai";
                 }
                 champList.push(newName);
             }
