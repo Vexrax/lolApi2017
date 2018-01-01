@@ -66,6 +66,7 @@ io.on('connection', function(socket) {
     });
     var name = socket.handshake.headers.referer.split("/");
     name = name[name.length - 1];
+    name = name.replace(new RegExp("%20", 'g'), " ");
     //io.emit('modifyHTML', name);
     io.to(socket.id).emit('modifyHTML', name);
     //use this socket to get match history
