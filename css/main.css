@@ -640,7 +640,8 @@ hr
     background: #771e29;
     outline: transparent;
     border: transparent;
+    margin-right: 20px;
 }
 .homebutton:hover {
-    cursor: pointer;    
+    cursor: pointer;
 }
