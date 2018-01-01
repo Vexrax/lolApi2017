@@ -152,6 +152,7 @@ function idListToNameList(idList, callback) {
             if(idList[i] == data[t].id) {
                 //console.log(data[t].name);
                 var newName =  data[t].name.replace(/\s/g, '');
+                newName = newName.replace(".", "");                
                 if(newName.includes("'")) {
                     newName = newName.replace("'", "");
                     newName = newName.toLowerCase();
