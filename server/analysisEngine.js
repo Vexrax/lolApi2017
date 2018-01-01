@@ -24,7 +24,7 @@ function analysisEngine(riotApi) {
     [ 8306, 8345, 8313 ],
     [ 8304, 8321, 8316 ],
     [ 8347, 8410, 8339 ] ] ];
-    this.minGames = 50;
+    this.minGames = 25;
 }
 analysisEngine.prototype.summonerAnalysis = function(gameList, idList, runeList, callback) {
     //this.sql.select("rune_stats", "WHERE champId=" + gameList[idList]);
