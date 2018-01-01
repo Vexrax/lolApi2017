@@ -27,15 +27,6 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     advisedRunesListG = advisedRunesList;
     advisedRuneTreesG = advisedRuneTrees;
     runeTreeG = runeTree;
-    console.log(summonerData);
-    console.log(gamesList);
-    console.log(idList);
-    console.log(currentRunesList);
-    console.log(currentRuneTrees);
-    console.log(advisedRunesList);
-    console.log(advisedRuneTrees);
-    console.log(champList);
-    console.log(gamesList[0].participants[idList[0] - 1].spell1Id);
     document.getElementById("nameplate").innerHTML = summonerData.name;
     for(var i  in champList)
     {
@@ -102,7 +93,6 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
                 break;
         }
         id = "champcontent" + j +"-4";
-        console.log("id:" + id);
         document.getElementById(id).src = sumID;
     }
     for(var k in gamesList)
@@ -186,7 +176,6 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     }
     for(var z in gamesList)
     {
-        // this currently returns undefined everything
         if(z > 7) break;
         document.getElementById("KDAcontent" + z + "-1").innerHTML = gamesList[z].participants[idList[z] - 1].stats.kills  + " | " + gamesList[z].participants[idList[z] - 1].stats.deaths  + " | " + gamesList[z].participants[idList[z] - 1].stats.assists;
     }
@@ -208,7 +197,6 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     //set runes
     for(var l in gamesList) {
         if(l > 7) break;
-        console.log(l);
         //set keystone
         var primaryTree = currentRuneTrees[l][0];
         var secondaryTree = currentRuneTrees[l][1];
@@ -251,6 +239,7 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         //check for dups
         for(var i = 0; i < advisedRunesList[l].length - 1; i ++) {
             if(advisedRunesList[l][i] == advisedRunesList[l][i + 1]) {
+                console.log("sug" + l);
                 document.getElementById("sug" + l).innerHTML = "Suggested Runes: Not enough data";
                 //rune was equal, not enough data
                 go = false;
@@ -293,7 +282,6 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
 });
 
 socket.on("modifyHTML", function(data){
-    console.log("changing HTML");
     document.getElementById("nameplate").innerHTML = data;
     document.getElementById("playerscontent0").style.visibility = 'hidden';
     document.getElementById("playerscontent1").style.visibility = 'hidden';
@@ -311,7 +299,6 @@ socket.on("noSummFound", function() {
 });
 
 function myFunction(id) {
-    console.log(id);
     var gameNum = id.substring(6, 7);
     if(document.getElementById("runesspace" + gameNum).style.display != "inline-block") {
         document.getElementById("runesspace" + gameNum).style.display = "inline-block";
