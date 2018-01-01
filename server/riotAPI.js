@@ -91,8 +91,7 @@ riot.prototype.getRecentGamesByName = function(name, callback) {
     //changes supplied summ name to account
     this.nameToProfile(name, function(profile) {
         //account id to games list. This just contains a list of the games ids.
-        //var gameListUri = self.host + "/lol/match/v3/matchlists/by-account/" + profile.accountId + "/recent" + self.keyString;
-        var gameListUri = self.host + "/lol/match/v3/matchlists/by-account/" + profile.accountId + "?beginTime=1512709200000&endIndex=10" + self.keyString;
+        var gameListUri = self.host + "/lol/match/v3/matchlists/by-account/" + profile.accountId + "/recent" + self.keyString;
         console.log(gameListUri);
         self.request(gameListUri, function(err, res, data) {
             //soo.... now I have a list of games, now i have to compile an array of json of the actual games
