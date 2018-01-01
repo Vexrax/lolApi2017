@@ -8,7 +8,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var analysisEngine = require('./analysisEngine');
 var riotAPI = require('./riotAPI');
-var riot = new riotAPI("RGAPI-95982c92-5cc4-4678-98dd-e039f60039b2");
+var riot = new riotAPI(process.env.riotapi);
 var mySQL = require('./mySQL');
 var sql = new mySQL();
 var analysis = new analysisEngine(riot);
@@ -67,7 +67,7 @@ io.on('connection', function(socket) {
     var name = socket.handshake.headers.referer.split("/");
     name = name[name.length - 1];
     for(var i = 0; i < 5; i ++) {
-        name = name.replace("%20", " ");        
+        name = name.replace("%20", " ");
     }
     //io.emit('modifyHTML', name);
     io.to(socket.id).emit('modifyHTML', name);
@@ -155,7 +155,7 @@ function idListToNameList(idList, callback) {
             if(idList[i] == data[t].id) {
                 //console.log(data[t].name);
                 var newName =  data[t].name.replace(/\s/g, '');
-                newName = newName.replace(".", "");                
+                newName = newName.replace(".", "");
                 if(newName.includes("'")) {
                     newName = newName.replace("'", "");
                     newName = newName.toLowerCase();
