@@ -15,7 +15,8 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
     document.getElementById("playerscontent5").style.visibility = 'visible';
     document.getElementById("playerscontent6").style.visibility = 'visible';
     document.getElementById("playerscontent7").style.visibility = 'visible';*/
-    for(var i = 0; i < 8; i ++) {
+    for(var i = 0; i < gamesList.length; i ++) {
+        if(i > 7) break;
         document.getElementById("KDAcontent" + i + "-1").style.visibility = 'visible';
         document.getElementById("button" + i).style.visibility = 'visible';
         document.getElementById("playerscontent" + i).style.visibility = 'visible';
