@@ -239,7 +239,6 @@ socket.on("matchHistory", function(summonerData, gamesList, idList, currentRunes
         //check for dups
         for(var i = 0; i < advisedRunesList[l].length - 1; i ++) {
             if(advisedRunesList[l][i] == advisedRunesList[l][i + 1]) {
-                console.log("sug" + l);
                 document.getElementById("sug" + l).innerHTML = "Suggested Runes: Not enough data";
                 //rune was equal, not enough data
                 go = false;
