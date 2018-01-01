@@ -40,7 +40,7 @@ app.get('/test', function(req, res){
 
 app.get('/:region', function(req, res){
     res.sendFile("/app/404.html");
-    console.log("Serving 404");
+   //console.log("Serving 404");
 });
 
 app.post('/', urlencodedParser, function (req, res) {
@@ -50,8 +50,8 @@ app.post('/', urlencodedParser, function (req, res) {
             res.redirect('https://runicinsight.herokuapp.com/' + req.body.region + '/' + profile.name);
         }
         else {
-            console.log("No Summoner Found");
-            io.emit("noSummFound");
+            res.redirect('https://runicinsight.herokuapp.com/NoSummFound')
+            //io.emit("noSummFound");
         }
     });
     //res.sendFile(path.join(__dirname + "/../../lolApi2017/SummonerPage.html"));
