@@ -555,7 +555,7 @@ RuneHelp Classes
 {
     width: 50%;
     min-width: 1200px;
-    height: 200px;
+    height: 230px;
     text-align: center;
     background-color: #171a20;
 }
@@ -573,7 +573,7 @@ RuneHelp Classes
 .infospace1>.runeinfo>.infospace
 {
     width: 900px;
-    height: 150px;
+    height: 180px;
     display: inline-block;
     background: #0a0b11;
     margin-top: 25px;
