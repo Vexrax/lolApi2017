@@ -8,6 +8,11 @@
 UNIVERSAL STYLE
 ===============================
  */
+
+.t {
+    color: white;
+    text-align: center;
+}
 body
 {
     height: 100%;
